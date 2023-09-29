@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Reset para REMS - 62.5% = 10px de 16px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem; /* Esto va con el RESET [1REM = 10PX] */
+}
+
+/* Globales */
+img {
+    max-width: 100%;
+}
