@@ -1,3 +1,11 @@
+:root {
+    --color-primary: #001524;    /* Color principal */
+    --color-secondary: #15616d;  /* Color secundario */
+    --color-background: #ffecd1; /* Color de fondo */
+    --color-accent: #ff7d00;     /* Color de acento */
+    --color-highlight: #78290f;  /* Color de resaltado */
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* Reset para REMS - 62.5% = 10px de 16px */
@@ -7,6 +15,7 @@ html {
 }
 body {
     font-size: 1.6rem; /* Esto va con el RESET [1REM = 10PX] */
+    background-color: var(--color-background);
 }
 
 /* Globales */
@@ -63,24 +72,31 @@ ul {
     }
 }
 
+.seccion {
+    margin: 2rem 0 2rem 0;
+}
+
 .centro {
     grid-column: 2/3;
     grid-row: 1/3;  
-    background-color: rgba(110, 182, 125, 0.614);
+    background-color: var(--color-secondary);
 }
 
 .izquierda {
     grid-column: 1/2;
     grid-row: 1/3;
-    background-color: yellowgreen;
-   
+    background-color: var(--color-highlight);
 }
-
+.izquierda img {
+    margin: 2rem 2rem;
+}
 .derecha {
     grid-column: 3/4;
     grid-row: -4/-2;
-    background-color: yellowgreen;
-    
+    background-color: var(--color-highlight);
+}
+.derecha img {
+    margin: 2rem 2rem;
 }
 
 /* Header */
@@ -111,7 +127,7 @@ ul {
 }
 
 .contenido-header h1 {
-    color: #ffffff;
+    color: var(--color-background);
     padding-bottom: 2rem;
     max-width: 60rem;
     line-height: 2;
@@ -129,6 +145,7 @@ ul {
     height: 8%;
 }
 
+/* Navegacion */
 .navegacion a {
     color: #ffffff;
     display: inline-block;
@@ -138,6 +155,29 @@ ul {
 .navegacion a:last-of-type {
     margin: 0;
 }
+
+/* footer */
+.experiencia {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.6rem;
+    padding: 2.5rem 0 2.5rem 0;
+    background-color: var(--color-primary);
+}
+
+li a {
+    color: var(--color-background);
+}
+
+nav.redes-sociales a{
+    color: var(--color-background);
+    font-size: 3.5rem;
+    margin-right: 2rem;
+}
+nav.redes-sociales a:last-child {
+    margin-right: 0;
+}
+
 
 /* Productos */
 .productos {
@@ -150,4 +190,3 @@ ul {
     height: 40%;
     width: 40%;
 }
-
