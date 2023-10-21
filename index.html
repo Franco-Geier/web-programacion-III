@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="site-header inicio">
-        <div class="centrar-contenido contenido-header">
+        <div class="contenedor contenido-header">
             <div class="barra">
                 <a class="imagen-logo" href="./">
                     <img src="img/harry-potter-seeklogo.svg" alt="hogwarts">
@@ -30,9 +30,83 @@
         </div>
     </header>
 
-    <div class="contenedor">             
+    <div class="contenedor-grid">
+        <div class="contenedor centro">
+            <section class="bienvenida seccion">
+                <div>
+                    <h2>Bienvenidos a la Magia de Harry Potter</h2>
+                    <p>¡Bienvenidos a la tienda en línea que hará realidad tus sueños mágicos!
+                    En <span>PotterSore</span>, te invitamos a explorar un mundo encantado lleno de
+                    productos inspirados en el universo de Harry Potter.</p>
+                </div>
+            </section>
+            
+            <main class="seccion">
+                <h2>Descubre la Magia</h2>
+                <p>Sumérgete en el mundo de Hogwarts y descubre una amplia gama 
+                de <a href="productos.html">productos</a> cuidadosamente seleccionados. 
+                Desde varitas mágicas auténticas hasta ropa y accesorios de tus casas favoritas,
+                libros, y objetos de colección, aquí encontrarás todo lo que necesitas para
+                abrazar tu amor por Harry Potter. En <span>PotterStore</span>, nos enorgullece
+                ofrecer productos con licencia oficial de Harry Potter. Cada artículo que
+                encuentres en nuestra tienda es auténtico y de la más alta calidad, para garantizarte
+                la mejor experiencia mágica</p>
+            </main>
+        </div>
+
+        <div class="contenedor centro-inferior">
+            <section class="test seccion">
+                <h2>Explora Tu Casa</h2>
+                <p>¿Eres un valiente Gryffindor, un astuto Slytherin, un leal Hufflepuff o un intelectual
+                Ravenclaw? Encuentra productos que representen tu casa y demuestra tu lealtad a Hogwarts.</p>
+                <a href="https://www.idrlabs.com/es/casa-de-hogwarts/prueba.php" target="_blank">Hacer Test</a>
+            </section>
+
+            <section class="despedida seccion">
+                <h2>Haz Realidad Tus Sueños Mágicos</h2>
+                <p>Desde las páginas de los libros hasta las pantallas de cine, Harry Potter ha tocado el corazón
+                de millones de personas en todo el mundo. En POTTER STORE, te ayudaremos a hacer realidad
+                tus sueños mágicos con productos que te transportarán al mundo de la magia y la aventura.</p>
+                <p>¡Gracias por visitar nuestra tienda en línea! Estamos emocionados de compartir esta
+                experiencia mágica contigo. Explora, disfruta y déjate llevar por la magia de Harry Potter.</p>
+            </section>
+        </div>
+
+        <section class="izquierda">
+            <h3>Conoce mas de</h3>
+            <div>
+                <h4>Gryffindor</h4>
+                <a href="https://harrypotter.fandom.com/es/wiki/Gryffindor" target="_blank"><img src="img/escudos/escudo griffindor.jpg" alt="Gryffindor"></a>
+            </div>
+        </section>
+
+        <section class="izquierda-inferior">
+            <div>
+                <h4>Hufflepuff</h4>
+                <a href="https://harrypotter.fandom.com/es/wiki/Hufflepuff" target="_blank"><img src="img/escudos/escudo hufflepuff.jpg" alt="Hufflepuff"></a>
+            </div>
+        </section>
+
+        <section class="derecha">
+            <h3>Conoce mas de</h3>
+            <div>
+                <h4>Ravenclaw</h4>
+                <a href="https://harrypotter.fandom.com/es/wiki/Ravenclaw" target="_blank"><img src="img/escudos/escudo ravenclaw.jpg" alt="Ravenclaw"></a>
+            </div>
+        </section>
+
+        <section class="derecha-inferior">
+            <div>
+                <h4>Slytherin</h4>
+                <a href="https://harrypotter.fandom.com/es/wiki/Slytherin"target="_blank"><img src="img/escudos/escudo slytherin.jpg" alt="Slytherin"></a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- <div class="contenedor-grid">             
     
-        <div class="centro centrar-contenido">
+        <div class="centro contenedor">
             <article>
                 <h2>Bienvenidos a la Magia de Harry Potter</h2>
                 <p>¡Bienvenidos a la tienda en línea que hará realidad tus sueños mágicos! En <span>POTTER STORE</span>, te invitamos a explorar un mundo encantado lleno de productos inspirados en el universo de Harry Potter.</p>
@@ -55,7 +129,6 @@
                 <p>¡Gracias por visitar nuestra tienda en línea! Estamos emocionados de compartir esta experiencia mágica contigo. Explora, disfruta y déjate llevar por la magia de Harry Potter.</p>
             </article>
         </div>
-    
         
         <section class="izquierda">
             <h3 class="centrar-texto">Conoce mas de</h3>
@@ -81,10 +154,9 @@
             </div>
         </section>
         
+    </div> -->
 
-    </div>
-
-    <footer class="site-footer">
+    <footer>
         <div class="experiencia">
 
             <nav class="navegacion-legal">
@@ -97,7 +169,7 @@
             </nav>
 
             <div>
-                <h3>Redes <span>sociales</span></h3>
+                <h3 class="centrar-texto">Redes <span>sociales</span></h3>
                 <nav class="redes-sociales">                    
                     <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
