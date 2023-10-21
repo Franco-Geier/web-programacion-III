@@ -1,10 +1,12 @@
 /* Paleta de colores */
 :root {
-    --color-primary: #001524;    /* Color principal */
+    --color-primary: #001524;  /* Color principal */
     --color-secondary: #15616d;  /* Color secundario */
-    --color-background: #ffecd1; /* Color de fondo */
-    --color-accent: #ff7d00;     /* Color de acento */
+    --color-background: #f2f2f2;  /* Color de fondo ANTES ERA: #ffecd1;*/
+    --color-accent: #ff7d00;  /* Color de acento */
+    --color-accent-contrast: #fe4918;  /* Color de contraste acento */
     --color-highlight: #78290f;  /* Color de resaltado */
+    --color-hover: #d84315;  /*Color de Hover*/
 }
 
 /* :root {
@@ -94,6 +96,38 @@ p {
 .seccion {
     margin-top: 1.8rem;
     margin-bottom: 4rem;
+    border-bottom: .1rem solid black;
+}
+
+
+/* Botones */
+.boton {
+    background-color: var(--color-accent);
+    padding: .5rem 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid var(--color-accent-contrast);
+}
+.boton:hover {
+    background-color: var(--color-hover);
+}
+
+.boton.hollow,
+.boton.hollow:hover {
+    background-color: #ffffff;
+    color: var(--color-accent);
+}
+
+.boton.transparente {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+.boton.transparente:hover {
+    border: 2px solid var(--color-accent)
 }
 
 
@@ -133,7 +167,7 @@ p {
 }
 
 .contenido-header h1 {
-    color: var(--color-background);
+    color: #ffffff;
     padding-bottom: 2rem;
     max-width: 60rem;
     line-height: 2;
@@ -172,14 +206,29 @@ p {
     line-height: 2.5rem;
 }
 
+.contenedor-grid h2::after {
+    content: "";
+    margin: 1rem auto 0 auto;
+    background-image: url(../img/separador.png);
+    height: 4rem;
+    width: 20rem;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.contenedor-grid h2 {
+    margin-bottom: 0;
+}
+
 .centro {
     grid-column: 2 / 3;
     grid-row: 0 / 1;
+    margin-bottom: 4rem;
 }
 
 .centro-inferior {
     grid-column: 2 / 3;
-    grid-row:  1 / 2;  
+    grid-row:  1 / 2;
 }
 
 .izquierda {
@@ -192,12 +241,13 @@ p {
     grid-row: 1 / 3;
 }
 
-.izquierda h4{
+.izquierda h4 {
     margin-top: 1.7rem;
 }
 
-.izquierda h3{
+.izquierda h3 {
     margin-bottom: 1.7rem;
+    margin-top: 0;
 }
 
 .derecha {
@@ -210,20 +260,19 @@ p {
     grid-row: -3 / -1;
 }
 
-.derecha h4{
+.derecha h4 {
     margin-top: 1.7rem;
 }
-.derecha h3{
+.derecha h3 {
     margin-bottom: 1.7rem;
+    margin-top: 0;
 }
 
 
 /* footer */
-/* QUITAR EL MARGIN DEL ULTIMO <a> */
-
 footer h3 {
     margin: 0 0 1.6rem 0;
-    color: var(--color-background);
+    color: #ffffff;
     text-align: left;
     text-transform: uppercase;
 }
@@ -236,13 +285,20 @@ footer h3 {
 }
 
 .navegacion-legal a {
-    color: var(--color-background);
+    color: #ffffff;
     display: inline-block;
     margin-bottom: .7rem;
 }
+.navegacion-legal ul li:last-child a {
+    margin-bottom: 0;
+}
+
+.contenedor-redes .redes-sociales{
+    margin-top: 2.5rem;
+}
 
 nav.redes-sociales a{
-    color: var(--color-background);
+    color: #ffffff;
     font-size: 3.2rem;
     margin-right: 1.7rem;
 }
@@ -251,14 +307,17 @@ nav.redes-sociales a:last-child {
 }
 
 .navegacion-ayuda a {
-    color: var(--color-background);
+    color: #ffffff;
     display: inline-block;
     margin-bottom: .7rem;
+}
+.navegacion-ayuda ul li:last-child a {
+    margin-bottom: 0;
 }
 
 p.copyright {
     background-color: var(--color-secondary);
-    color: var(--color-background);
+    color: #ffffff;
     padding: .5rem;
     margin: 0;
     text-align: center;
