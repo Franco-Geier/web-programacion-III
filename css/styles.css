@@ -124,10 +124,9 @@ p {
     font-size: 2.2rem;
     margin-bottom: 2rem;
     display: inline-block;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
     border: 2px solid var(--color-accent-contrast);
 }
-
 
 .boton.hollow,
 .boton.hollow:hover {
@@ -149,14 +148,14 @@ p {
 }
 
 /* Header */
-.site-header {
+.site-header.inicio {
     position: relative;
     height: 100vh;
     min-height: 55rem;
     margin-bottom: 1.2rem;
 }
 
-.site-header::before {
+.site-header.inicio::before {
     content: "";
     background-image: url(../img/banner.webp);
     background-size: cover;
@@ -173,7 +172,6 @@ p {
 .imagen-logo img {
     height: 85%;
     width: 85%;
-    filter: none;
 }
 
 .contenido-header {
@@ -186,7 +184,7 @@ p {
 .contenido-header h1 {
     color: #ffffff;
     padding-bottom: 2rem;
-    max-width: 60rem;
+    max-width: 55rem;
     line-height: 2;
 }
 
@@ -203,12 +201,19 @@ p {
     color: #ffffff;
     display: inline-block;
     font-size: 1.8rem;
+    font-weight: bold;
     margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
 }
 .navegacion a:last-of-type {
     margin-right: 0;
 }
 
+.navegacion a:hover {
+    text-decoration: underline;
+    transform: scale(1.07)
+}
 
 /* Pagina Principal */
 .contenedor-grid {    
@@ -270,7 +275,7 @@ p span {
     margin-top: 1.7rem;
 }
 
-.izquierda h3 {
+.izquierda.izquierda-inferior h3 {
     margin-bottom: 1.7rem;
     margin-top: 0;
 }
@@ -288,7 +293,8 @@ p span {
 .derecha h4 {
     margin-top: 1.7rem;
 }
-.derecha h3 {
+
+.derecha.derecha-inferior h3 {
     margin-bottom: 1.7rem;
     margin-top: 0;
 }
@@ -314,8 +320,8 @@ a.escudo img {
 }
 
 a.escudo:hover img{
-    -webkit-filter: contrast(115%);
-    filter: saturate(115%);
+    -webkit-filter: contrast(110%);
+    filter: saturate(110%);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
@@ -336,7 +342,7 @@ a.escudo h4 {
 }
 
 a.escudo:hover h4 {
-    top: -8rem;
+    top: -5rem;
     opacity: 0;
 }
 
@@ -379,6 +385,16 @@ footer h3 {
 
 footer h3 span{
     color: var(--color-secondary);
+}
+
+footer a {
+    font-size: 1.8rem;
+    transition: all .2s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color-accent);
 }
 
 .experiencia {
