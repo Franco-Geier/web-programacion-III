@@ -5,8 +5,8 @@
     --color-background: #f2f2f2;  /* Color de fondo ANTES ERA: #ffecd1;*/
     --color-accent: #ff7d00;  /* Color de acento */
     --color-accent-contrast: #fe4918;  /* Color de contraste acento */
-    --color-highlight: #78290f;  /* Color de resaltado */
     --color-hover: #d84315;  /*Color de Hover*/
+    --color-highlight: #78290f;  /* Color de resaltado */
 }
 
 /* :root {
@@ -89,7 +89,7 @@ p {
 @media only screen and (min-width: 992px) {
     .contenedor {
         width: 90%;
-        max-width: 110rem;
+        max-width: 120rem;
     }
 }
 
@@ -99,6 +99,20 @@ p {
     border-bottom: .1rem solid black;
 }
 
+.parallax::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-filter: brightness(.3);
+    filter: brightness(.3);
+    z-index: -1;
+}
 
 /* Botones */
 .boton {
@@ -107,14 +121,13 @@ p {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 2.2rem;
     margin-bottom: 2rem;
     display: inline-block;
     transition: all 0.3s ease;
     border: 2px solid var(--color-accent-contrast);
 }
-.boton:hover {
-    background-color: var(--color-hover);
-}
+
 
 .boton.hollow,
 .boton.hollow:hover {
@@ -126,10 +139,14 @@ p {
     background-color: transparent;
     border: 2px solid #ffffff;
 }
+
 .boton.transparente:hover {
-    border: 2px solid var(--color-accent)
+    border: 2px solid var(--color-accent);
 }
 
+.boton:hover {
+    background-color: var(--color-hover);
+}
 
 /* Header */
 .site-header {
@@ -143,7 +160,7 @@ p {
     content: "";
     background-image: url(../img/banner.webp);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     filter: brightness(.4);
     position: absolute;
     top: 0;
@@ -204,6 +221,7 @@ p {
     align-items: center;
     text-align: center;
     line-height: 2.5rem;
+    gap: 2.5rem;
 }
 
 .contenedor-grid h2::after {
@@ -223,12 +241,19 @@ p {
 .centro {
     grid-column: 2 / 3;
     grid-row: 0 / 1;
+    margin-top: 1rem;
     margin-bottom: 4rem;
 }
 
 .centro-inferior {
     grid-column: 2 / 3;
     grid-row:  1 / 2;
+}
+
+p span {
+    color: var(--color-highlight);
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .izquierda {
@@ -268,14 +293,94 @@ p {
     margin-top: 0;
 }
 
+/* Escudos */
+.contenedor-escudo a {
+    display: inline-block;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+    background-color: #e7e2e2; 
+}
 
-/* footer */
+a.escudo {
+    position: relative;
+    overflow: hidden;
+}
+
+a.escudo img {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+a.escudo:hover img{
+    -webkit-filter: contrast(115%);
+    filter: saturate(115%);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+a.escudo h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    text-align: center;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+a.escudo:hover h4 {
+    top: -8rem;
+    opacity: 0;
+}
+
+
+/* Seccion inferior */
+section.test {
+    position: relative;
+    height: auto;
+}
+
+section.test::before {
+    background-image: url(../img/sorting-hat.jpg);
+    content: "";
+}
+
+section.test {
+    position: relative;
+    padding: 6rem 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+section.test h2 {
+    font-size: 5vw;
+    margin-top: 1.5rem;
+}
+
+section.test p {
+    font-size: 2.3rem;
+}
+
+
+/* Footer */
 footer h3 {
     margin: 0 0 1.6rem 0;
     color: #ffffff;
     text-align: left;
     text-transform: uppercase;
 }
+
+footer h3 span{
+    color: var(--color-secondary);
+}
+
 .experiencia {
     display: flex;
     justify-content: space-around;
