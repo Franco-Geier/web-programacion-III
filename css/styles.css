@@ -7,6 +7,7 @@
     --color-accent-contrast: #fe4918;  /* Color de contraste acento */
     --color-hover: #d84315;  /*Color de Hover*/
     --color-highlight: #78290f;  /* Color de resaltado */
+    --color-card-background: #e7e2e2;  /* Color de fondo del card */
 }
 
 /* :root {
@@ -275,7 +276,12 @@ p span {
     margin-top: 1.7rem;
 }
 
-.izquierda.izquierda-inferior h3 {
+.izquierda h3 {
+    margin-bottom: 1.7rem;
+    margin-top: 0;
+}
+
+.izquierda-inferior h3 {
     margin-bottom: 1.7rem;
     margin-top: 0;
 }
@@ -294,10 +300,16 @@ p span {
     margin-top: 1.7rem;
 }
 
-.derecha.derecha-inferior h3 {
+.derecha h3 {
     margin-bottom: 1.7rem;
     margin-top: 0;
 }
+
+.derecha-inferior h3 {
+    margin-bottom: 1.7rem;
+    margin-top: 0;
+}
+
 
 /* Escudos */
 .contenedor-escudo a {
@@ -306,7 +318,7 @@ p span {
     color: #000000;
     padding: 1rem;
     text-align: center;
-    background-color: #e7e2e2; 
+    background-color: var(--coolor-card-background); 
 }
 
 a.escudo {
@@ -347,7 +359,7 @@ a.escudo:hover h4 {
 }
 
 
-/* Seccion inferior */
+/* Seccion test */
 section.test {
     position: relative;
     height: auto;
@@ -360,7 +372,7 @@ section.test::before {
 
 section.test {
     position: relative;
-    padding: 6rem 0;
+    padding: 7rem 0;
     color: #ffffff;
     text-align: center;
 }
@@ -374,6 +386,41 @@ section.test p {
     font-size: 2.3rem;
 }
 
+/* Main index */
+.producto a {
+    display: inline-block;
+    color: inherit;
+}
+
+.producto a img {
+    padding: 2rem;
+}
+
+.card-producto {
+    border: .1rem solid #000000;
+    border-radius: 4rem;
+    padding: 2rem 4rem;
+    background-color: var(--color-card-background);
+    -webkit-box-shadow: inset 0rem -20rem 5.5rem 3.8rem rgba(0,0,0,0.16);
+    -moz-box-shadow: inset 0rem -20rem 5.5rem 3.8rem rgba(0,0,0,0.16);
+    box-shadow: inset 0rem -20rem 5.5rem 3.8rem rgba(0,0,0,0.16);
+    transition: all .3s ease-in-out;
+}
+
+.card-producto:hover {
+    box-shadow: none;
+}
+
+.card-producto img {
+    filter: brightness(75%);
+    transition: all .3s ease-in-out;
+}
+
+.card-producto:hover img {
+    filter: none;
+    -webkit-transform: scale(1.07); 
+    transform: scale(1.07);
+}
 
 /* Footer */
 footer h3 {
