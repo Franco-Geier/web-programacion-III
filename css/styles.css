@@ -589,7 +589,7 @@ p.copyright {
 }
 
 .produc {
-    display: flex;
+    display:flex;
     width: 600px;
     height: 400px;
     justify-content: center;
