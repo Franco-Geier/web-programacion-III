@@ -509,13 +509,130 @@ p.copyright {
 
 /* INTERNAS */
 /* Productos */
-.productos {
+/* .productos {
     grid-column: 2/3;
     grid-row: 1/4;
-    background-color: violet;
-}
+    
+} */
 
 .productos img {
-    height: 40%;
-    width: 40%;
+    height: 50%;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Nav demas paginas transiciones */
+
+@keyframes fade {
+    0% {background-color: #0e1a40}
+    25% {background-color: #740001}
+    50% {background-color:#ecb939}
+    75%{background-color:#1a472a}
+    100% {background-color: #0e1a40}
+  }
+
+.box {
+    display: flex;
+    flex-direction: column;
+    animation-name: fade;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+}
+
+.barra{
+    padding: 20px;
+}
+
+.marca img {
+    margin-right: 10px; 
+}
+
+/* pagina productos principal  */
+.card-header {
+    padding: 15;
+    justify-content: center;
+     
+}
+.card-body img{
+    margin-top: 15px;
+    
+}
+.card-body{
+    border-bottom: solid #000000;
+    width: 260px;
+    height: 290px;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+
+
+.products{
+    display: flex; 
+    justify-content: center;
+    
+    
+}
+
+.contenedorproducto{
+    border: .1rem solid #000000;
+    margin: 10px;
+    text-align: center;
+    border-radius: 2rem;
+    
+}
+
+
+.titulo p{
+    /* font-family: 'Niconne', cursive, bold; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.precios p{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif
+    /* font-family: 'Niconne', cursive, bold; */
+}
+
+
+.contenedorproducto img {
+    transition: all .3s ease-in-out;
+}
+
+.contenedorproducto:hover img {
+    -webkit-transform: scale(1.07); 
+    transform: scale(1.07);
+}
+
+.produc {
+    display:flex;
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+}
+  
+.productos h2{
+    text-align: center;
+}
+.produc img{
+    
+    width:0px;
+    flex-grow: 1;
+    object-fit:cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.produc img:hover {
+    cursor:move;
+    width: 200px;
+    height: 400px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.box-info{
+    margin: 20px;
+
 }

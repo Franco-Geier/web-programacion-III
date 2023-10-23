@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas Frecuentes</title>
+    <title>Potter Store</title>
     <link rel="icon" href="hpicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./">
-                <img src="img/logo.png" width="5%" height="5%" alt="hogwarts">
-            </a>
-            <a href="productos.html">Productos</a>
-            <a href="quienessomos.html">Quienes Somos</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <h1>Potter Store</h1>
+        <div class="box">
+            <nav class="navegacion">
+                <div class="barra">
+                    <a class="marca" href="index.html">
+                      <img src="img\harry-potter-seeklogo.svg" alt="Logo" width="50" height="50" >
+                      PotterStore
+                    </a>
+                      
+                    <ul>
+                      <a href="productos.html">Productos</a>
+                      <a href="quienessomos.html">Quienes Somos</a>
+                      <a href="contacto.html">Contacto</a>
+                      <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <div class="contenedor-grid">
@@ -51,7 +63,6 @@
                 <h2>¿Cómo puedo ponerme en contacto con el servicio al cliente?</h2>
                 <p>Puedes contactar a nuestro servicio al cliente a través del formulario de contacto en nuestra página web, enviando un correo electrónico a [tu dirección de correo electrónico], o llamando al [número de teléfono de contacto]. Estamos aquí para ayudarte en cualquier momento.</p>
             </article>
-
             <div>
                 <button><a href="./">Volver al Inicio</a></button>
             </div>
@@ -61,25 +72,43 @@
     </div>
 
     <footer>
-        <div class="Experiencia">
-            <div class="Legal">
-                <ul>
-                    <li><a href="https://www.wizardingworld.com/privacy">Aviso de Privacidad</a></li>
-                    <li><a href="https://www.unilevernotices.com/cookie-notices/argentina-spanish.html">Aviso de cookies</a></li>
-                    <li><a href="https://www.wizardingworld.com/legals">Aviso Legal</a></li>
-                </ul>
+        <div class="experiencia">
+            <div>
+                <h3>Legal</h3>
+                <nav class="navegacion-legal">
+                    <ul>
+                        <li><a href="https://www.wizardingworld.com/childrens-privacy-policy" target="_blank">Aviso de Privacidad</a></li>
+                        <li><a href="https://www.wizardingworld.com/privacy"target="_blank">Aviso de cookies</a></li>
+                        <li><a href="https://www.wizardingworld.com/legals" target="_blank">Aviso Legal</a></li>
+                    </ul>
+                </nav>
             </div>
 
-            <div class="Ayuda">
-                <ul>
-                    <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a href="contacto.html">Contactanos</a></li>
-                    <li><a href="https://www.wizardingworld.com/terms">Bases y Condiciones</a></li>
-                </ul>
-                
+            <div class="contenedor-redes">
+                <h3 class="centrar-texto">Redes <span>sociales</span></h3>
+                <nav class="redes-sociales">                    
+                    <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                </nav>
             </div>
-
+            
+            <div>
+                <h3>Ayuda</h3>
+                <nav class="navegacion-ayuda">
+                    <ul>
+                        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a href="contacto.html">Contactanos</a></li>
+                        <li><a href="https://www.wizardingworld.com/terms" target="_blank">Bases y Condiciones</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+        <p class="copyright">
+            Todos los derechos Reservados PotterStore 2023.
+        </p>
     </footer>
 
     
