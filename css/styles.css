@@ -318,7 +318,7 @@ p span {
     color: #000000;
     padding: 1rem;
     text-align: center;
-    background-color: var(--coolor-card-background); 
+    background-color: var(--color-card-background); 
 }
 
 a.escudo {
@@ -386,20 +386,28 @@ section.test p {
     font-size: 2.3rem;
 }
 
-/* Main index */
+/* Main index-cards */
+.contenedor-productos {
+    display: flex;
+    justify-content: space-between;
+}
+
 .producto a {
     display: inline-block;
     color: inherit;
 }
 
-.producto a img {
-    padding: 2rem;
+.producto {
+    flex: 0 0 calc(33.3% - 1rem);
+    margin-bottom: 6rem;
+    text-align: center;
 }
 
 .card-producto {
     border: .1rem solid #000000;
-    border-radius: 4rem;
-    padding: 2rem 4rem;
+    border-radius: 3.5rem;
+    padding: 1.7rem;
+    text-align: center;
     background-color: var(--color-card-background);
     -webkit-box-shadow: inset 0rem -20rem 5.5rem 3.8rem rgba(0,0,0,0.16);
     -moz-box-shadow: inset 0rem -20rem 5.5rem 3.8rem rgba(0,0,0,0.16);
@@ -412,15 +420,22 @@ section.test p {
 }
 
 .card-producto img {
+    height: auto;
     filter: brightness(75%);
     transition: all .3s ease-in-out;
 }
 
 .card-producto:hover img {
     filter: none;
-    -webkit-transform: scale(1.07); 
-    transform: scale(1.07);
+    -webkit-transform: scale(1.03); 
+    transform: scale(1.03);
 }
+
+.card-producto h3 {
+    margin: 0;
+    padding: 1.5rem 0 1rem;
+}
+
 
 /* Footer */
 footer h3 {
