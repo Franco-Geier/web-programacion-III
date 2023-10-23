@@ -570,12 +570,14 @@ p.copyright {
 
 
 .titulo p{
-    font-family: 'Niconne', cursive, bold;
+    /* font-family: 'Niconne', cursive, bold; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
 .precios p{
-    font-size: 25px;
-    font-family: 'Niconne', cursive, bold;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif
+    /* font-family: 'Niconne', cursive, bold; */
 }
 
 
