@@ -398,7 +398,7 @@ section.test p {
 }
 
 .producto {
-    flex: 0 0 calc(33.3% - 1rem);
+    flex: 0 0 calc(25% - 1rem);
     margin-bottom: 6rem;
     text-align: center;
 }
@@ -540,7 +540,7 @@ p.copyright {
     
 }
 
-.barra{
+.navegacion .barra{
     padding: 20px;
 }
 
