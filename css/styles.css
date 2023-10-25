@@ -51,7 +51,7 @@ h1 {
 
 h2 {
     font-size: 3.2rem;
-    line-height: 3.3rem;
+    line-height: 1.2;
 }
 
 h3 {
@@ -232,7 +232,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    line-height: 2.5rem;
+    line-height: 1.3;
     gap: 2.5rem;
 }
 
@@ -333,8 +333,8 @@ a.escudo {
 }
 
 a.escudo img {
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 a.escudo:hover img{
@@ -375,9 +375,9 @@ section.test::before {
 
 section.test {
     position: relative;
-    padding: 8rem 0;
+    padding: 8.5rem 0;
     height: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 6.5rem;
     color: #ffffff;
     text-align: center;
 }
@@ -385,7 +385,7 @@ section.test {
 section.test h2 {
     font-weight: 400;
     font-size: 5vw;
-    margin-top: 1.5rem;
+    margin: 0 0 1.5rem 0;
 }
 
 section.test p {
@@ -393,11 +393,19 @@ section.test p {
 }
 
 /* Main index-cards */
+
+main h2 {
+    font-weight: 900;
+    font-size: 4.3rem;
+    margin-bottom: 0;
+}
+
 .contenedor-productos {
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 5.5rem 0;
 }
 
 .producto {
@@ -415,6 +423,7 @@ section.test p {
     background-clip: content-box, border-box;
     transition: background 0.5s ease-in-out, box-shadow 0.6s ease-in-out;
     overflow: hidden;
+    text-align: center;
 }
 
 .producto a {
@@ -430,7 +439,7 @@ section.test p {
 .producto img {
     border-radius: 3.5rem;
     height: auto;
-    filter: brightness(55%);
+    filter: brightness(45%);
     transition: all .3s ease-in-out;
     padding: 1rem;
 }
@@ -438,7 +447,7 @@ section.test p {
 .producto:hover img {
     filter: none;
     -webkit-transform: scale(1.1); 
-    transform: scale(1.1);
+    transform: scale(1.109);
 }
 
 a.card-producto {
@@ -449,6 +458,7 @@ a.card-producto h3 {
     border-radius: 0px 0px 3.5rem 3.5rem;
     font-size: 2vw;
     margin: 0;
+    padding: 1rem;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -464,6 +474,36 @@ a.card-producto h3 {
 a.card-producto:hover h3 {
     bottom: -6rem;
     opacity: 0;
+}
+
+
+/* Novedades */
+.seccion-novedades {
+    background-color: var(--color-primary);
+    padding: 2.5rem 0 0; 
+}
+
+.seccion-novedades h2 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 4.3rem;
+    margin-bottom: 0;
+}
+
+.contenedor-novedades {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5.5rem 0 5rem 0;
+}
+
+.contenedor-novedades .producto {
+    flex-basis: calc(33.3% - 11rem);
+    background: var(--color-secondary);
+}
+.contenedor-novedades .producto:hover {
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
 }
 
 
