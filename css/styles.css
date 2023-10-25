@@ -119,6 +119,7 @@ p {
 .boton {
     background-color: var(--color-accent);
     padding: .5rem 1.5rem;
+    border-radius: .5rem;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
@@ -339,6 +340,8 @@ a.escudo:hover img{
 }
 
 a.escudo h4 {
+    
+    font-size: 2.2vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -360,11 +363,6 @@ a.escudo:hover h4 {
 
 
 /* Seccion test */
-section.test {
-    position: relative;
-    height: auto;
-}
-
 section.test::before {
     background-image: url(../img/sorting-hat.jpg);
     content: "";
@@ -372,7 +370,9 @@ section.test::before {
 
 section.test {
     position: relative;
-    padding: 7rem 0;
+    padding: 8rem 0;
+    height: auto;
+    margin-bottom: 4rem;
     color: #ffffff;
     text-align: center;
 }
@@ -388,8 +388,26 @@ section.test p {
 
 /* Main index-cards */
 .contenedor-productos {
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.producto {
+    flex: 0 0 calc(25% - 5rem);
+    margin-bottom: 5.5rem;
+    border: .1rem solid #000000;
+    border-radius: 3.5rem;
+    background-color: var(--color-card-background);
+    -webkit-box-shadow: 0px 13px 11px -8px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 13px 11px -8px rgba(0,0,0,0.61);
+    box-shadow: 0px 13px 11px -8px rgba(0,0,0,0.61);
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: background 0.9s ease-in-out, box-shadow 0.6s ease-in-out;
+    overflow: hidden;
 }
 
 .producto a {
@@ -397,43 +415,28 @@ section.test p {
     color: inherit;
 }
 
-.producto {
-    flex: 0 0 calc(25% - 1rem);
-    margin-bottom: 6rem;
-    text-align: center;
-}
-
-.card-producto {
-    border: .1rem solid #000000;
-    border-radius: 3.5rem;
-    padding: 1.7rem;
-    text-align: center;
-    background-color: var(--color-card-background);
-    -webkit-box-shadow: inset 0rem -20rem 5.5rem 3.8rem rgba(0,0,0,0.16);
-    -moz-box-shadow: inset 0rem -20rem 5.5rem 3.8rem rgba(0,0,0,0.16);
-    box-shadow: inset 0rem -20rem 5.5rem 3.8rem rgba(0,0,0,0.16);
-    transition: all .3s ease-in-out;
-}
-
-.card-producto:hover {
+.producto:hover {
     box-shadow: none;
+    background: var(--color-secondary);
 }
-
-.card-producto img {
+  
+.producto img {
     height: auto;
     filter: brightness(75%);
     transition: all .3s ease-in-out;
+    padding: 1rem;
 }
 
-.card-producto:hover img {
+.producto:hover img {
     filter: none;
-    -webkit-transform: scale(1.03); 
-    transform: scale(1.03);
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .card-producto h3 {
+    font-size: 2vw;
     margin: 0;
-    padding: 1.5rem 0 1rem;
+    padding: 1.5rem 0 .8rem;
 }
 
 
