@@ -10,13 +10,6 @@
     --color-card-background: #e7e2e2;  /* Color de fondo del card */
 }
 
-/* :root {
-    --color-primary: #3D2B11;
-    --color-secondary: #A77E52;
-    --color-background: #C99A4E;
-    --color-accent: #F2DF60;
-    --color-highlight: #D0DCAC;
-  } */
 
 /* Reset */
 html {
@@ -27,6 +20,11 @@ html {
     box-sizing: inherit;
 }
 body {
+    font-family: 'Cinzel', serif; /* Fuente por defecto */
+
+    /* font-family: 'Cinzel Decorative', serif;
+    font-family: 'Niconne', cursive;  Como citar las otras fuentes*/
+
     font-size: 1.6rem; /* Esto va con el RESET [1REM = 10PX] */
     background-color: var(--color-background);
 }
@@ -53,6 +51,7 @@ h1 {
 
 h2 {
     font-size: 3.2rem;
+    line-height: 3.3rem;
 }
 
 h3 {
@@ -61,6 +60,10 @@ h3 {
 
 h4 {
     font-size: 2.2rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Cinzel Decorative', serif;
 }
 
 p {
@@ -184,10 +187,12 @@ p {
 }
 
 .contenido-header h1 {
+    font-size: 2.6rem;
+    font-weight: 900;
     color: #ffffff;
-    padding-bottom: 2rem;
-    max-width: 55rem;
-    line-height: 2;
+    padding-bottom: 1rem;
+    max-width: 45rem;
+    line-height: 1.7;
 }
 
 .barra {
@@ -340,9 +345,9 @@ a.escudo:hover img{
 }
 
 a.escudo h4 {
-    
-    font-size: 2.2vw;
+    font-size: 1.7vw;
     position: absolute;
+    font-weight: 900;
     top: 0;
     left: 0;
     margin: 0;
@@ -378,6 +383,7 @@ section.test {
 }
 
 section.test h2 {
+    font-weight: 400;
     font-size: 5vw;
     margin-top: 1.5rem;
 }
@@ -395,6 +401,7 @@ section.test p {
 }
 
 .producto {
+    position: relative;
     flex: 0 0 calc(25% - 5rem);
     margin-bottom: 5.5rem;
     border: .1rem solid #000000;
@@ -402,11 +409,11 @@ section.test p {
     background-color: var(--color-card-background);
     -webkit-box-shadow: 0px 13px 11px -8px rgba(0,0,0,0.61);
     -moz-box-shadow: 0px 13px 11px -8px rgba(0,0,0,0.61);
-    box-shadow: 0px 13px 11px -8px rgba(0,0,0,0.61);
+    box-shadow: 0px 13px 11px -4px rgba(0,0,0,0.61);
     background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    transition: background 0.9s ease-in-out, box-shadow 0.6s ease-in-out;
+    transition: background 0.5s ease-in-out, box-shadow 0.6s ease-in-out;
     overflow: hidden;
 }
 
@@ -421,8 +428,9 @@ section.test p {
 }
   
 .producto img {
+    border-radius: 3.5rem;
     height: auto;
-    filter: brightness(75%);
+    filter: brightness(55%);
     transition: all .3s ease-in-out;
     padding: 1rem;
 }
@@ -433,10 +441,29 @@ section.test p {
     transform: scale(1.1);
 }
 
-.card-producto h3 {
+a.card-producto {
+    padding-bottom: 6rem;
+}
+
+a.card-producto h3 {
+    border-radius: 0px 0px 3.5rem 3.5rem;
     font-size: 2vw;
     margin: 0;
-    padding: 1.5rem 0 .8rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+a.card-producto:hover h3 {
+    bottom: -6rem;
+    opacity: 0;
 }
 
 
