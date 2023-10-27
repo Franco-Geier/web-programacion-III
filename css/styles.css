@@ -46,20 +46,20 @@ ul {
 }
 
 h1 {
-    font-size: 3.6rem;
+    font-size: 3.3rem;
 }
 
 h2 {
-    font-size: 3.2rem;
-    line-height: 1.2;
+    font-size: 2.9rem;
+    line-height: 1.1;
 }
 
 h3 {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
 }
 
 h4 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
 }
 
 h1, h2, h3, h4 {
@@ -67,13 +67,40 @@ h1, h2, h3, h4 {
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 p span {
     color: var(--color-highlight);
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+    
+    h2 {
+        font-size: 3.2rem;
+        line-height: 1.2;
+    }
+    
+    h3 {
+        font-size: 2.6rem;
+    }
+    
+    h4 {
+        font-size: 2.2rem;
+    }
+    
+    p {
+        font-size: 1.8rem;
+    }
+    
+    p span {
+        font-size: 2rem;
+    }
 }
 
 /* Utilidades */
@@ -130,12 +157,20 @@ p span {
     border-radius: .5rem;
     color: #ffffff;
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
     font-size: 2.2rem;
     margin-bottom: 2rem;
-    display: inline-block;
+    display: block;
+    flex: 0 0 100%;
     transition: all .3s ease;
     border: 2px solid var(--color-accent-contrast);
+}
+@media(min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
 }
 
 .boton.hollow,
@@ -211,7 +246,7 @@ p span {
     color: #ffffff;
     padding-bottom: 1rem;
     max-width: 60rem;
-    line-height: 1.8;
+    line-height: 1.4;
 }
 @media only screen and (min-width: 768px) {
     .contenido-header h1 {
@@ -222,14 +257,16 @@ p span {
 }
 
 .barra {
-    padding-top: 5rem;
+    padding-top: 2.3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 4rem;
 }
 @media only screen and (min-width: 768px) {
     .barra {
+        margin-top: 0;
         padding-top: 3rem;
         flex-direction: row;
     }
@@ -238,15 +275,15 @@ p span {
 /* Navegacion */
 .navegacion a {
     color: #ffffff;
-    display: block; /*Nuevo*/
+    display: block;
     font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 2rem; /*Nuevo*/
+    margin-bottom: 2rem;
     text-transform: uppercase;
     transition: all .2s ease-in-out;
 }
 .navegacion a:last-of-type {
-    margin-bottom: 0; /*Nuevo*/
+    margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
     .navegacion a {
@@ -479,7 +516,7 @@ section.test p {
 /* Main index-cards */
 main h2 {
     font-weight: 900;
-    font-size: 4.3rem;
+    font-size: 4rem;
     margin-bottom: 0;
 }
 
@@ -586,11 +623,16 @@ a.card-producto:hover h3 {
 .contenedor-novedades {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 5.5rem 0 5rem 0;
     align-items: center;
+}
+
+.contenedor-novedades .producto {
+    margin-left: 9rem;
+    margin-right: 9rem;
 }
 
 .contenedor-novedades .producto h3 {
@@ -602,10 +644,59 @@ a.card-producto:hover h3 {
         flex-direction: row;
     }
     .contenedor-novedades .producto {
+        margin-left: 0;
+        margin-right: 0;
         flex-basis: calc(33.3% - 11rem);
     }
     .contenedor-novedades .producto h3 {
         font-size: 1.7vw;
+    }
+}
+
+
+/* Contacto Home */
+.imagen-contacto {
+    background-image: url(../img/contacto-home.webp);
+    background-position: top;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    padding-top: 6rem;
+    color: #ffffff;
+    flex: 0 0 85%;
+}
+.contenido-contacto h2{
+    margin-top: 0;
+    text-align: center;
+    font-weight: 900;
+}
+.contenido-contacto p{
+    text-align: center;
+    font-weight: 600;
+}
+.contenido-contacto a{
+    margin-bottom: 6rem;
+    margin-top: 1.5rem;
+}
+@media only screen and (min-width: 768px) {
+    .contenido-contacto {
+        padding-top: 6rem;
+        padding-bottom: 13rem;
+        color: #ffffff;
+    }
+    .contenido-contacto h2{
+        margin-top: 4rem;
+        text-align: left;
+    }
+    .contenido-contacto p{
+        text-align: left;
+    }
+    .contenido-contacto a{
+        margin-bottom: 0;
     }
 }
 
@@ -674,8 +765,10 @@ footer a:hover {
     margin-bottom: 0;
 }
 
-.contenedor-redes .redes-sociales{
-    margin-top: 2.5rem;
+
+.contenedor-redes {
+    display: flex;
+    flex-direction: column;
 }
 
 nav.redes-sociales a{
@@ -695,6 +788,7 @@ p.copyright {
     text-align: center;
     font-size: 2rem;
 }
+
 
 /* INTERNAS */
 /* Productos */
