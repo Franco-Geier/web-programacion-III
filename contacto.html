@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potter Store</title>
+    <title>Contacto</title>
     <link rel="icon" href="hpicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,68 +32,57 @@
         </div>
     </header>
 
-    <div class="contenedor-grid">
-        <div class="centro">
-            <main>
-                <h2>Llena el formulario con tus datos</h2>
-                <form action="show_data.html" target="_blank" method="get">
-                    <fieldset>
-                        <legend>Motivo del contacto</legend>
-        
-                        <label for="opciones-motivos">¿Cuál es el motivo del contacto?</label>
-                        <select id="opciones-motivos" name="motivo">
-                            <option value="" disabled selected>Elige una opción</option>
-                            <option value="Producto">Es sobre un producto</option>
-                            <option value="Web">Es sobre el sitio web</option>
-                        </select>
-                    </fieldset>
-        
-                    <fieldset>
-                        <legend>Información Personal</legend>
-        
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
-        
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido" required>
-        
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" required>
-        
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono">
-                    </fieldset>
-        
-                    <fieldset>
-                        <legend>Información del producto</legend>
-                        <label for="nombre-producto">Nombre Del Producto:</label>
-                        <input type="text" id="nombre-producto" name="nombre-producto" placeholder="Nombre Del Producto" required>
-        
-                        <label for="opciones-reclamos"></label>
-                        <select id="opciones-reclamos" name="reclamo">
-                            <option value="" disabled selected>Elige una opción</option>
-                            <option value="Defectuoso">El producto llegó dañado/defectuoso</option>
-                            <option value="No Llego">El producto no llegó</option>
-                            <option value="Devolucion">Quiero una devolución</option>
-                        </select>
-        
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje"></textarea>
-                    </fieldset>
-        
-                    <label for="mayor">Tengo 18 años o más</label>
-                    <input type="checkbox" required>
-                    <input type="submit" value="Enviar">
-                </form>
-            </main>
-            
-            <div>
-                <button><a href="./">Volver al Inicio</a></button>   
-            </div>
+    <h1 class="centrar-texto">Contacto</h1>
+    <img src="img/contactanos.webp" alt="">
+    <main class="contenedor-contacto contenedor contenido-centrado">
+        <h2 class="centrar-texto">Llena el formulario con tus datos</h2>
+        <form class="contacto" action="show_data.html" target="_blank" method="get">
+            <fieldset>
+                <legend>Motivo del contacto</legend>
+                <label for="opciones-motivos">¿Cuál es el motivo del contacto?</label>
+                <select id="opciones-motivos" name="motivo">
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="Producto">Es sobre un producto</option>
+                    <option value="Web">Es sobre el sitio web</option>
+                </select>
+            </fieldset>
 
-        </div>
-    </div>
+            <fieldset>
+                <legend>Información Personal</legend>
 
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu Teléfono">
+            </fieldset>
+
+            <fieldset>
+                <legend>Información del producto</legend>
+                <label for="nombre-producto">Nombre Del Producto:</label>
+                <input type="text" id="nombre-producto" name="nombre-producto" placeholder="Nombre Del Producto" required>
+
+                <label for="opciones-reclamos"></label>
+                <select id="opciones-reclamos" name="reclamo">
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="Defectuoso">El producto llegó dañado/defectuoso</option>
+                    <option value="No Llego">El producto no llegó</option>
+                    <option value="Devolucion">Quiero una devolución</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </fieldset>
+            <input class="boton boton-azul" type="submit" value="Enviar">
+        </form>
+    </main>
+    
     <footer>
         <div class="experiencia">
             <div>
@@ -106,17 +95,6 @@
                     </ul>
                 </nav>
             </div>
-
-            <div class="contenedor-redes">
-                <h3 class="centrar-texto">Redes <span>sociales</span></h3>
-                <nav class="redes-sociales">                    
-                    <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                </nav>
-            </div>
             
             <div>
                 <h3>Ayuda</h3>
@@ -126,6 +104,17 @@
                         <li><a href="contacto.html">Contactanos</a></li>
                         <li><a href="https://www.wizardingworld.com/terms" target="_blank">Bases y Condiciones</a></li>
                     </ul>
+                </nav>
+            </div>
+
+            <div class="contenedor-redes">
+                <h3>Redes <span>sociales</span></h3>
+                <nav class="redes-sociales centrar-texto">                    
+                    <a href="#"><i class="fa-brands fa-facebook-f icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram icon" aria-hidden="true"></i></a>
                 </nav>
             </div>
         </div>
