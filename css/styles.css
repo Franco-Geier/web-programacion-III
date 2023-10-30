@@ -255,18 +255,23 @@ p span {
 }
 
 .contenido-header h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 900;
     color: #ffffff;
     padding-bottom: 1rem;
     max-width: 60rem;
-    line-height: 1.4;
+    line-height: 1.6;
+}
+@media only screen and (min-width: 480px) {
+    .contenido-header h1 {
+        font-size: 3rem;
+        line-height: 1.7;
+    }
 }
 @media only screen and (min-width: 768px) {
     .contenido-header h1 {
         font-size: 3.4rem;
         max-width: 58rem;
-        line-height: 1.7;
     }
 }
 
@@ -290,7 +295,7 @@ p span {
 .navegacion a {
     color: #ffffff;
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 2rem;
     text-transform: uppercase;
@@ -301,8 +306,10 @@ p span {
 }
 @media only screen and (min-width: 768px) {
     .navegacion a {
+        font-size: 1.8rem;
         display: inline-block;
         margin-right: 2rem;
+        margin-bottom: 0;
     }
     .navegacion a:last-of-type {
         margin-right: 0;
@@ -440,7 +447,7 @@ a.escudo:hover img{
 }
 
 a.escudo h4 {
-    font-size: 3.7vw;
+    font-size: 5.7vw;
     position: absolute;
     font-weight: 900;
     top: 0;
@@ -454,6 +461,11 @@ a.escudo h4 {
     text-transform: uppercase;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+}
+@media only screen and (min-width: 480px) {
+    a.escudo h4 {
+        font-size: 3.7vw;
+    }
 }
 @media only screen and (min-width: 768px) {
     a.escudo h4 {
@@ -513,14 +525,21 @@ section.test p {
 .contenedor-productos {
     margin-top: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
     padding: 5.5rem 0;
+}
+@media only screen and (min-width: 480px) {
+    .contenedor-productos {
+        flex-direction: row;
+    }
 }
 
 .producto {
     position: relative;
-    flex: 0 0 calc(50% - 4rem);
+    flex: 0 0 calc(100% - 3rem);
     margin-bottom: 5.5rem;
     border: .1rem solid #000000;
     border-radius: 3.5rem;
@@ -535,9 +554,14 @@ section.test p {
     overflow: hidden;
     text-align: center;
 }
+@media only screen and (min-width: 480px) {
+    .producto {
+        flex: 0 0 calc(50% - 3rem);
+    }
+}
 @media only screen and (min-width: 768px) {
     .producto {
-        flex: 0 0 calc(25% - 5rem);
+        flex: 0 0 calc(25% - 3rem);
     }
 }
 
@@ -571,7 +595,7 @@ a.card-producto {
 
 a.card-producto h3 {
     border-radius: 0px 0px 3.5rem 3.5rem;
-    font-size: 3vw;
+    font-size: 6vw;
     margin: 0;
     padding: 1rem;
     position: absolute;
@@ -584,6 +608,11 @@ a.card-producto h3 {
     text-transform: uppercase;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+}
+@media only screen and (min-width: 480px) {
+    a.card-producto h3 {
+        font-size: 4vw;
+    }
 }
 @media only screen and (min-width: 768px) {
     a.card-producto h3 {
@@ -613,20 +642,27 @@ a.card-producto:hover h3 {
 .contenedor-novedades {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 5.5rem 0 4rem 0;
     align-items: center;
 }
 
-.contenedor-novedades .producto {
-    margin-left: 9rem;
-    margin-right: 9rem;
+.contenedor-novedades .producto h3 {
+    font-size: 6vw;
 }
 
-.contenedor-novedades .producto h3 {
-    font-size: 3vw;
+@media only screen and (min-width: 480px) {
+    .contenedor-novedades {
+        flex-direction: row;
+    }
+    .contenedor-novedades .producto {
+        flex-basis: calc(50% - 3rem);
+    }
+    .contenedor-novedades .producto h3 {
+        font-size: 4vw;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -636,10 +672,10 @@ a.card-producto:hover h3 {
     .contenedor-novedades .producto {
         margin-left: 0;
         margin-right: 0;
-        flex-basis: calc(33.3% - 11rem);
+        flex-basis: calc(33.3% - 4.5rem);
     }
     .contenedor-novedades .producto h3 {
-        font-size: 1.7vw;
+        font-size: 2vw;
     }
 }
 
@@ -649,14 +685,13 @@ a.card-producto:hover h3 {
     background-image: url(../img/contacto-home.webp);
     background-position: top;
     background-size: cover;
-    height: auto;
+    height: 40rem;
     display: flex;
     align-items: center;
     border: 2px solid #000000;
 }
 
 .contenido-contacto {
-    padding-top: 6rem;
     color: #ffffff;
     flex: 0 0 85%;
 }
@@ -673,25 +708,16 @@ a.card-producto:hover h3 {
 }
 
 .contenido-contacto a{
-    margin-bottom: 6rem;
-    margin-top: 1.5rem;
+    margin-top: 2.2rem;
+    margin-bottom: 0;
 }
 
 @media only screen and (min-width: 768px) {
-    .contenido-contacto {
-        padding-top: 6rem;
-        padding-bottom: 13rem;
-        color: #ffffff;
-    }
     .contenido-contacto h2{
-        margin-top: 4rem;
         text-align: left;
     }
     .contenido-contacto p{
         text-align: left;
-    }
-    .contenido-contacto a{
-        margin-bottom: 0;
     }
 }
 
@@ -979,6 +1005,7 @@ p.copyright {
 
 }
 
+/* Pagina de Contacto */
 .contenedor-contacto h2 {
     margin-top: 4rem;
 }
@@ -1010,17 +1037,15 @@ select {
     border-radius: 1rem;
 }
 
+input[type="submit"] {
+    width: 100%;
+}
+@media only screen and (min-width: 480px) {
+    input[type="submit"] {
+        width: inherit;
+    }
+}
+
 textarea {
     height: 18rem;
 }
-
-
-
-/* ----------------------------------------------
-  Generated by AnimatiSS
-  Licensed under FreeBSD License
-  URL: https://xsgames.co/animatiss
-  Twitter: @xsgames_
----------------------------------------------- */
-
-/* .tracking-in-contract{animation:tracking-in-contract 0.4s linear both} @keyframes tracking-in-contract{0%{letter-spacing:.6em;opacity:0}40%{opacity:.6}100%{letter-spacing:normal;opacity:1}} */
