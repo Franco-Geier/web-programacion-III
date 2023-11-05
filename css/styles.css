@@ -129,6 +129,17 @@ p span {
     }
 }
 
+@media only screen and (min-width: 400px) {
+    .container {
+        width: 95%;
+    }
+}
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1200px;
+    }
+}
+
 .seccion {
     margin-top: 1.8rem;
     margin-bottom: 4rem;
@@ -207,36 +218,99 @@ p span {
 
 
 /* Header */
-.site-header.inicio {
-    position: relative;
-    height: 100vh;
-    min-height: 55rem;
-    margin-bottom: 1.2rem;
+.navbar-brand {
+    font-size: 2.4rem;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+.navbar-brand:hover{
+    transform: scale(1.07);
 }
 
-.site-header.inicio::before {
-    content: "";
-    background-image: url(../img/banner.webp);
-    background-size: cover;
-    background-position: top center;
-    filter: brightness(.4);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.navbar-brand img {
+    transition: all .2s ease-in-out;
+}
+.navbar-brand:hover img{
+    transform: rotate(3deg);
+}
+
+.nav-item .nav-link {
+    color: #ffffff;
+    font-size: 1.7rem;
+    transition: all .2s ease-in-out;
+    margin-bottom: .5rem;
+}
+
+.nav-item .nav-link:hover {
+    text-decoration: underline;
+}
+@media only screen and (min-width: 991px) {
+    .nav-item .nav-link:hover {
+        text-decoration: underline;
+        transform: scale(1.07);
+    }
+    .nav-item .nav-link {
+        margin-bottom: 0;
+    }
+}
+
+form input.form-control {
+    padding-left: 2rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.icono-form {
+    top: 25%;
+    left: 0.6%;
+}
+
+.carousel-inner {
+    height: 100vh;
+    min-height: 55rem;
+}
+
+.carousel-item {
+    position: relative;
+    background: #000000;
     height: 100%;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
     z-index: -1;
 }
 
-.imagen-logo img {
-    height: 90%;
-    width: 90%;
+.carousel-control-prev,
+.carousel-control-next {
+    width: 7%;
 }
-@media only screen and (min-width: 768px) {
-    .imagen-logo img {
-        height: 85%;
-        width: 85%;
-    }
+
+.carousel-text {
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    text-align: center;
+    color: #ffffff; 
+    background: rgba(0, 0, 0, 0.3); 
+    padding: 1rem; 
+    max-width: 40rem;
+    line-height: 1.8;
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+
+.carousel-text a {
+    padding: 0 1rem;
+    margin: 0;
 }
 
 .contenido-header {
@@ -672,7 +746,7 @@ a.card-producto:hover h3 {
     .contenedor-novedades .producto {
         margin-left: 0;
         margin-right: 0;
-        flex-basis: calc(33.3% - 4.5rem);
+        flex-basis: calc(33.3% - 7.5rem);
     }
     .contenedor-novedades .producto h3 {
         font-size: 2vw;
