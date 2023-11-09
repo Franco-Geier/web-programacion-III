@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;700;900&family=Niconne&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -94,13 +93,14 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> <!--.container-->
         </nav>
         
 
         <!-- Carrusel -->
         <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             
+            <!-- Botones inferiores -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -112,7 +112,7 @@
                 <div class="carousel-item active" data-bs-interval="7500">
                     <div class="overlay-image" style="background-image: url(./img/banner.webp);"></div>
                     <div class="carousel-text">
-                        <h2>PotterStore Bienvenidos a la Magia de Harry Potter</h2>
+                        <h1>PotterStore Bienvenidos a la Magia de Harry Potter</h1>
                     </div>
                 </div>
                 
@@ -136,6 +136,7 @@
             
             </div>
 
+            <!-- Botones laterales -->
             <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -217,7 +218,7 @@
         <section class="derecha-inferior">
             <h3>Conoce mas de</h3>
             <div class="contenedor-escudo contenedor">
-                <a class="escudo" href="https://harrypotter.fandom.com/es/wiki/Slytherin"target="_blank">
+                <a class="escudo" href="https://harrypotter.fandom.com/es/wiki/Slytherin" target="_blank">
                     <h4>Slytherin</h4>
                     <img src="img/escudos/escudo-slytherin.png" alt="Slytherin">
                 </a>
@@ -314,7 +315,7 @@
                 <nav class="navegacion-legal">
                     <ul>
                         <li><a href="https://www.wizardingworld.com/childrens-privacy-policy" target="_blank">Aviso de Privacidad</a></li>
-                        <li><a href="https://www.wizardingworld.com/privacy"target="_blank">Aviso de cookies</a></li>
+                        <li><a href="https://www.wizardingworld.com/privacy" target="_blank">Aviso de cookies</a></li>
                         <li><a href="https://www.wizardingworld.com/legals" target="_blank">Aviso Legal</a></li>
                     </ul>
                 </nav>
@@ -347,5 +348,7 @@
         </p>
     </footer>
     
+    <!-- Script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
