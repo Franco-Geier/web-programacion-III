@@ -293,7 +293,7 @@ form input.form-control {
     background-position: center;
     opacity: 0.5;
     z-index: -1;
-    animation: zoomAndMove 8s both;
+    animation: zoomAndMove 8.4s forwards;
 }
   
 @keyframes zoomAndMove {
@@ -1009,6 +1009,7 @@ p.copyright {
 
 /* INTERNAS */
 /* Productos */
+
 /* .productos {
     grid-column: 2/3;
     grid-row: 1/4;
@@ -1180,4 +1181,29 @@ input[type="submit"] {
 
 textarea {
     height: 18rem;
+}
+
+/* Pagina preguntas frecuentes */
+.accordion {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.accordion-button {
+    background-color: var(--color-card-background);
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 2.2rem;
+}
+
+.accordion-item {
+    margin-bottom: 3rem;
+}
+
+.accordion-item:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.accordion-body p {
+    font-size: 1.6rem;
 }
