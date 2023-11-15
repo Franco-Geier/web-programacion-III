@@ -143,7 +143,7 @@ p span {
 .seccion {
     margin-top: 1.8rem;
     margin-bottom: 4rem;
-    border-bottom: .1rem solid black;
+    border-bottom: .1rem solid #000000;
 }
 
 .contenido-centrado {
@@ -165,12 +165,24 @@ p span {
     z-index: -1;
 }
 
+.separator::after {
+    content: "";
+    margin: 1rem auto 0 auto;
+    background-image: url(../img/separador.png);
+    height: 4rem;
+    width: 20rem;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+
 /* Botones */
 .boton {
     background-color: var(--color-accent);
     padding: .5rem 1.5rem;
     border-radius: .5rem;
     color: #ffffff;
+    outline: none;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -179,7 +191,7 @@ p span {
     display: block;
     flex: 0 0 100%;
     transition: all .3s ease;
-    border: 2px solid var(--color-accent-contrast);
+    border: 1px solid var(--color-accent-contrast);
 }
 @media(min-width: 768px) {
     .boton {
@@ -189,7 +201,7 @@ p span {
 }
 .boton-azul {
     background-color: var(--color-primary);
-    border: 2px solid var(--color-secondary);
+    border: 1px solid var(--color-secondary);
 }
 
 .boton.hollow,
@@ -200,11 +212,11 @@ p span {
 
 .boton.transparente {
     background-color: transparent;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .boton.transparente:hover {
-    border: 2px solid var(--color-accent);
+    border: 1px solid var(--color-accent);
 }
 
 .boton:hover {
@@ -259,14 +271,15 @@ p span {
     font-size: 1.3rem;
 }
 
-form input.form-control {
+form input.form-control.m-0 {
     padding: .5rem .5rem .5rem 2rem;
     font-weight: 900;
     font-size: 1.5rem;
 }
 
 .icono-form {
-    top: .8rem;
+    top: 50%;
+    transform: translateY(-50%);
     left: .6rem;
     font-size: 1.3rem;
 }
@@ -469,16 +482,6 @@ form input.form-control {
         grid-template-rows: 1fr auto;
         gap: 2.5rem;
     }
-}
-
-.contenedor-grid h2::after {
-    content: "";
-    margin: 1rem auto 0 auto;
-    background-image: url(../img/separador.png);
-    height: 4rem;
-    width: 20rem;
-    display: block;
-    background-repeat: no-repeat;
 }
 
 .contenedor-grid h2 {
@@ -1143,22 +1146,22 @@ p.copyright {
     margin-top: 4rem;
 }
 
-legend {
+.form1 legend {
     font-size: 2.6rem;
     color: var(--color-primary);
 }
 
-label {
+.form1 label {
     font-weight: 700;
     text-transform: uppercase;
     display: block;
 }
 
-fieldset {
+.form1 fieldset {
     margin-bottom: 1.5rem;
 }
 
-input:not([type="submit"]),
+.form1 input:not([type="submit"]),
 textarea,
 select {
     padding: 1rem;
@@ -1206,4 +1209,134 @@ textarea {
 
 .accordion-body p {
     font-size: 1.6rem;
+}
+
+/* Login */
+.contenedor-logo .navbar-brand {
+    font-size: 2.8rem;
+}
+
+body.body-login::before {
+    content: "";
+    background: url(../img/background-login-sign-up.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+body.body-login {
+    background: #000000;
+    position: relative;
+}
+
+.contenedor-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form.form2 {
+    max-width: 35rem;
+}
+@media only screen and (min-width: 430px) {
+    form.form2 {
+        min-width: 40rem;
+    }
+}
+.form2 h1 {
+    font-weight: 900;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.form2 h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2.3rem;
+}
+
+.form2 .contenedor-logo {
+    margin: 3rem 0 2rem;
+    color: #ffffff;
+}
+
+.form2 .input-group {
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.form2 input {
+    width: 100%;
+    padding: 2rem;
+    outline: 0;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background: transparent;
+    font-size: 1.8rem;
+}
+
+.form2 .input-group label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 2rem;
+    color: #ffffff;
+    cursor: text;
+    transition: 0.3s;
+}
+
+.form2 .boton {
+    position:relative;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    text-transform: capitalize;
+    border-radius: 3rem;
+    margin-bottom: 1.4rem;
+}
+
+.form2 input:focus ~ label,
+.form2 input:not(:placeholder-shown) ~ label {
+    top: -4.5rem;
+    font-size: 1.4rem;
+}
+
+.contenedor-form .remember-forgot {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    margin: -2.5rem 0 2.5rem;
+    color: #ffffff;
+}
+
+.remember-forgot label input {
+    accent-color: #ffffff;
+    margin-right: .3rem;
+    width: inherit;
+}
+
+.remember-forgot a {
+    color: #ffffff;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: baseline;
 }
