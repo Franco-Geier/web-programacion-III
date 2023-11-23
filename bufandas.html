@@ -87,16 +87,17 @@
                         </div>
                         <button class="btn-clean">Limpiar</button>
                         <div class="carrito">
-                            <div class="container-cantidad">
+                            <div class="container-quantity">
                                 <input 
                                 type="number" 
-                                placeholder="1"  
+                                placeholder="1" 
+                                value="1" 
                                 min="1"
-                                class="input-cantidad"
+                                class="input-quantity"
                                 >
-                                <div class="btn-mas-menos">
-                                    <i class="fa-solid fa-chevron-up"></i>
-                                    <i class="fa-solid fa-chevron-down"></i>
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
                                 </div>
                             </div>
                             <button class="btn-carrito">
@@ -169,18 +170,20 @@
                         </div>
                         <button class="btn-clean">Limpiar</button>
                         <div class="carrito">
-                            <div class="container-cantidad">
+                            <div class="container-quantity">
                                 <input 
                                 type="number" 
+                                value="1" 
                                 placeholder="1"  
                                 min="1"
-                                class="input-cantidad"
+                                class="input-quantity"
                                 >
-                                <div class="btn-mas-menos">
-                                    <i class="fa-solid fa-chevron-up"></i>
-                                    <i class="fa-solid fa-chevron-down"></i>
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
                                 </div>
                             </div>
+                           
                             <button class="btn-carrito">
                                 <i class="fa-solid fa-plus"></i>
                                 Añadir al carrito
@@ -251,16 +254,17 @@
                         </div>
                         <button class="btn-clean">Limpiar</button>
                         <div class="carrito">
-                            <div class="container-cantidad">
+                            <div class="container-quantity">
                                 <input 
+                                value="1" 
                                 type="number" 
                                 placeholder="1"  
                                 min="1"
-                                class="input-cantidad"
+                                class="input-quantity"
                                 >
-                                <div class="btn-mas-menos">
-                                    <i class="fa-solid fa-chevron-up"></i>
-                                    <i class="fa-solid fa-chevron-down"></i>
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement" ></i>
                                 </div>
                             </div>
                             <button class="btn-carrito">
@@ -333,16 +337,17 @@
                         </div>
                         <button class="btn-clean">Limpiar</button>
                         <div class="carrito">
-                            <div class="container-cantidad">
+                            <div class="container-quantity">
                                 <input 
                                 type="number" 
                                 placeholder="1"  
+                                value="1" 
                                 min="1"
-                                class="input-cantidad"
+                                class="input-quantity"
                                 >
-                                <div class="btn-mas-menos">
-                                    <i class="fa-solid fa-chevron-up"></i>
-                                    <i class="fa-solid fa-chevron-down"></i>
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
                                 </div>
                             </div>
                             <button class="btn-carrito">
@@ -407,6 +412,11 @@
             Todos los derechos Reservados PotterStore 2023.
         </p>
     </footer>
+    <!-- Script de js productos-->
+    <script src="index.js">
+    </script>
+
+
     <!-- Script de Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
