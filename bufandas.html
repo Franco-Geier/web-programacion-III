@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bufandas</title>
@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
-<body>
+<body class="bodyproductos">
     <header>
         <div class="box">
             <nav class="navegacion">
@@ -33,210 +34,340 @@
             </nav>
         </div>
     </header>
-
-    <div class="contenedor-grid contenedor">
+    
+    <div class="contenedor centro">
+            <div class="container-title"><h3>Bufandas</h3></div>
+            
+            <main class="mainproductos">
+                <div class="container-img">
+                    <div id="carouselcasas" class="carousel slide">
+                        <div class="carouselinner">
+                            <div class="carousel-item active">
+                                <img src="img\bufandas\griffindor\1.jpg" class="d-block w-100"  alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\griffindor\2.jpg"class="d-block w-100"  alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\griffindor\3.jfif"class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\griffindor\4.jfif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\griffindor\5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselcasas" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselcasas" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
+                    </div>
+                    
+                </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$6000</span>
+                        <h3>Bufanda Gryffindor</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="talle">Talle</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Infantil</option>
+                                <option value="adults">Adultos</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-cantidad">
+                                <input 
+                                type="number" 
+                                placeholder="1"  
+                                min="1"
+                                class="input-cantidad"
+                                >
+                                <div class="btn-mas-menos">
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
+                        </div>
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Esta bufanda encantadora está inspirada en una las casas de Hogwarts y presenta los colores y el emblema distintivo de Gryffindor. Fabricada con tejido de alta calidad, esta bufanda no solo te mantendrá abrigado durante los días fríos, sino que también te sumergirá en la atmósfera mágica de la famosa escuela de magia.
+                                </p>
+                            </div>
+                        </div>
         
-        <div class="centro">
-            <h2>Bufanda Gryffindor</h2>
-            <div class="producto">
-                
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 180px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample1" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 180px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\griffindor\1.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\griffindor\2.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\griffindor\3.jfif" style="max-width: 540px; max-height: 180px;"class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\griffindor\4.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\griffindor\5.jpg" style="max-width: 540px; max-height: 180px;"class="d-block w-100" alt="...">
-                                </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
-                            </div>
-                        
-                        </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
-                        </div>
-                      </div>
+        
                     </div>
                 </div>
                 
-            </div>
-            <h2>Bufanda Hufflepuff</h2>
-            <div class="producto">
-                
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 180px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample2" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 180px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\hufflepuff\1.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\hufflepuff\3.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\hufflepuff\4.jfif" style="max-width: 540px; max-height: 180px;"class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\hufflepuff\5.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\hufflepuff\R.jfif" style="max-width: 540px; max-height: 180px;"class="d-block w-100" alt="...">
-                                </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
+            </main>
+            <main class="mainproductos">
+                <div class="container-img">
+                    <div id="carouselhufflepuf" class="carousel slide">
+                        <div class="carouselinner">
+                            <div class="carousel-item active">
+                                <img src="img\bufandas\hufflepuff\1.jpg" class="d-block w-100"  alt="...">
                             </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\hufflepuff\3.jpg"class="d-block w-100"  alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\hufflepuff\4.jfif"class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\hufflepuff\5.jfif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\hufflepuff\R.jfif" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
                         
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselhufflepuf" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselhufflepuf" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
+                    </div>
+                    
+                </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$6000</span>
+                        <h3>Bufanda Hufflepuff</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="talle">Talle</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Infantil</option>
+                                <option value="adults">Adultos</option>
+                            </select>
                         </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-cantidad">
+                                <input 
+                                type="number" 
+                                placeholder="1"  
+                                min="1"
+                                class="input-cantidad"
+                                >
+                                <div class="btn-mas-menos">
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
                         </div>
-                      </div>
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Esta bufanda encantadora está inspirada en una las casas de Hogwarts y presenta los colores y el emblema distintivo de Hufflepuff. Fabricada con tejido de alta calidad, esta bufanda no solo te mantendrá abrigado durante los días fríos, sino que también te sumergirá en la atmósfera mágica de la famosa escuela de magia.
+                                </p>
+                            </div>
+                        </div>
+        
+        
                     </div>
                 </div>
                 
-            </div>
-            <h2>Bufanda Ravenclaw</h2>
-            <div class="producto">
-                
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 180px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample3" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 180px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\ravenclaw\1.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\ravenclaw\2.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\ravenclaw\3.jfif" style="max-width: 540px; max-height: 180px;"class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\ravenclaw\4.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\ravenclaw\5.jfif" style="max-width: 540px; max-height: 180px;"class="d-block w-100" alt="...">
-                                </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
+            </main>
+            <main class="mainproductos">
+                <div class="container-img">
+                    <div id="carouselravenclaw" class="carousel slide">
+                        <div class="carouselinner">
+                            <div class="carousel-item active">
+                                <img src="img\bufandas\ravenclaw\1.jfif" class="d-block w-100"  alt="...">
                             </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\ravenclaw\2.jfif"class="d-block w-100"  alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\ravenclaw\3.jfif"class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\ravenclaw\4.jfif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\ravenclaw\5.jfif" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
                         
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselravenclaw" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselravenclaw" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
+                    </div>
+                    
+                </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$6000</span>
+                        <h3>Bufanda Ravenclaw</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="talle">Talle</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Infantil</option>
+                                <option value="adults">Adultos</option>
+                            </select>
                         </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-cantidad">
+                                <input 
+                                type="number" 
+                                placeholder="1"  
+                                min="1"
+                                class="input-cantidad"
+                                >
+                                <div class="btn-mas-menos">
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
                         </div>
-                      </div>
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Esta bufanda encantadora está inspirada en una las casas de Hogwarts y presenta los colores y el emblema distintivo de Ravenclaw. Fabricada con tejido de alta calidad, esta bufanda no solo te mantendrá abrigado durante los días fríos, sino que también te sumergirá en la atmósfera mágica de la famosa escuela de magia.
+                                </p>
+                            </div>
+                        </div>
+        
+        
                     </div>
                 </div>
                 
-            </div>
-            <h2>Bufanda Slytherin</h2>
-            <div class="producto">
-                
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 180px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample4" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 180px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\slytherin\1.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\slytherin\2.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\slytherin\3.jfif" style="max-width: 540px; max-height: 180px;"class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\slytherin\4.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 180px;">
-                                    <img src="img\bufandas\slytherin\5.jfif" style="max-width: 540px; max-height: 180px;"class="d-block w-100" alt="...">
-                                </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
+            </main>
+            <main class="mainproductos">
+                <div class="container-img">
+                    <div id="carouselslytherin" class="carousel slide">
+                        <div class="carouselinner">
+                            <div class="carousel-item active">
+                                <img src="img\bufandas\slytherin\1.jpg" class="d-block w-100"  alt="...">
                             </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\slytherin\2.jfif"class="d-block w-100"  alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\slytherin\3.jfif"class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\slytherin\4.jfif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img\bufandas\slytherin\5.jfif" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
                         
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselslytherin" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselslytherin" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
+                    </div>
+                    
+                </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$6000</span>
+                        <h3>Bufanda Slytherin</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="talle">Talle</label>
+                            <select name="talle" id="talle">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Infantil</option>
+                                <option value="adults">Adultos</option>
+                            </select>
                         </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-cantidad">
+                                <input 
+                                type="number" 
+                                placeholder="1"  
+                                min="1"
+                                class="input-cantidad"
+                                >
+                                <div class="btn-mas-menos">
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
                         </div>
-                      </div>
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Esta bufanda encantadora está inspirada en una las casas de Hogwarts y presenta los colores y el emblema distintivo de Slytherin. Fabricada con tejido de alta calidad, esta bufanda no solo te mantendrá abrigado durante los días fríos, sino que también te sumergirá en la atmósfera mágica de la famosa escuela de magia.
+                                </p>
+                            </div>
+                        </div>
+        
+        
                     </div>
                 </div>
                 
-            </div>
-            <div>
-                <button type="button" class="btn btn-secondary btn-lg"><a href="productos.html" >Volver atrás</a></button>
-                <button type="button" class="btn btn-secondary btn-lg"><a href="./">Volver al Inicio </a></button>
-                
-            </div>   
-        </div>
-    </div>
+            </main>
 
+    </div>
     <footer>
         <div class="experiencia">
             <div>
@@ -276,7 +407,6 @@
             Todos los derechos Reservados PotterStore 2023.
         </p>
     </footer>
-
     <!-- Script de Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
