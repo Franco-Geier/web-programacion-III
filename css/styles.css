@@ -1142,6 +1142,7 @@ textarea {
     height: 18rem;
 }
 
+
 /* Pagina preguntas frecuentes */
 .accordion {
     margin-top: 6rem;
@@ -1167,6 +1168,7 @@ textarea {
     font-size: 1.6rem;
 }
 
+
 /* Login */
 .contenedor-logo .navbar-brand {
     font-size: 2.8rem;
@@ -1179,7 +1181,7 @@ body.body-login::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: .5;
+    opacity: .4;
     top: 0;
     left: 0;
     bottom: 0;
@@ -1195,13 +1197,14 @@ body.body-login {
 
 .contenedor-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
 
 form.form2 {
-    max-width: 35rem;
+    max-width: 36rem;
 }
 @media only screen and (min-width: 430px) {
     form.form2 {
@@ -1213,14 +1216,6 @@ form.form2 {
     line-height: 1.4;
     color: #ffffff;
     margin-bottom: 2rem;
-}
-
-.form2 h2 {
-    font-weight: 700;
-    font-size: 2rem;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 2.3rem;
 }
 
 .form2 .contenedor-logo {
@@ -1240,7 +1235,8 @@ form.form2 {
     border: 1px solid #ffffff;
     color: #ffffff;
     background: transparent;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    font-weight: 600;
 }
 
 .form2 .input-group label {
@@ -1251,6 +1247,7 @@ form.form2 {
     padding: 2rem;
     color: #ffffff;
     cursor: text;
+    font-weight: 600;
     transition: 0.3s;
 }
 
@@ -1264,18 +1261,38 @@ form.form2 {
     margin-bottom: 1.4rem;
 }
 
+.form2 input {
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form2 input:focus {
+    border-color: var(--color-secondary); 
+}
+
+.form2 input:hover {
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form2 input:valid {
+    border-color: green;
+}
+
 .form2 input:focus ~ label,
 .form2 input:not(:placeholder-shown) ~ label {
     top: -4.5rem;
     font-size: 1.4rem;
+    padding-left: .8rem;
 }
 
 .contenedor-form .remember-forgot {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     font-size: 1.6rem;
     margin: -2.5rem 0 2.5rem;
     color: #ffffff;
+    font-weight: 700;
 }
 
 .remember-forgot label input {
@@ -1295,6 +1312,42 @@ form.form2 {
 .remember-forgot label {
     display: flex;
     align-items: baseline;
+}
+
+.form-inferior h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2.3rem;
+}
+
+.form-inferior .boton {
+    width: 100%;
+    padding: .7rem;
+    text-transform: capitalize;
+    border-radius: 3rem;
+    margin-bottom: 1.4rem;
+}
+
+/* Registro */
+.contenedor-nombres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form2 p {
+    color: #ffffff;
+    margin: -2.6rem 0 1.9rem;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.form2 p a {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* Estilos pagina productos */
