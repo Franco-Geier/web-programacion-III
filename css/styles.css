@@ -1539,9 +1539,13 @@ form.form2 {
 
 }
 
+/* cambio de estilo de nav sin animacion */
 @media only screen and (max-width: 767px) {
     .others{
         display: none;
+    }
+    .versionmovil{
+        margin-bottom: 100px;
     }
 }
 
@@ -1550,3 +1554,13 @@ form.form2 {
         display: none;
     }
 }
+
+/* pagina productos sin banners para moviles */
+@media only screen and (max-width: 767px) {
+    .left img,.right img{
+        display: none;
+    }
+    
+}
+
+
