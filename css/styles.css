@@ -1395,15 +1395,19 @@ form.form2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .container-precio span{
     font-size: 20px;
     font-weight: 300;
 }
+.container-precio h3{
+    font-size: 20px;
+}
 
 .container-detalles-productos{
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .form-group{
@@ -1415,16 +1419,16 @@ form.form2 {
 }
 
 .form-group label{
-    width: 70px;
+    width: 90px;
     color: #222;
     font-weight: 700;
 
 }
 
 .form-group select{
-    width: 300px;
+    width: 200px;
     border: none;
-    padding: 12px 15px;
+    padding: 10px 10px;
     background-color: #f7f7f7;
     outline: none;
     color: #666;
@@ -1458,7 +1462,7 @@ form.form2 {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    font-weight: 700;
+    font-weight: 300;
     cursor: pointer;
 }
 .btn-carrito:hover{
@@ -1531,10 +1535,10 @@ form.form2 {
 }
 
 .texto-descripcion p, .titulo-descripcion h4 {
-    font-size: 13px;
+    font-size: 16px;
     color:#252525;
     line-height: 22px;
-    margin-top: 25px;
+    margin-top: 10px;
 
 }
 
@@ -1560,4 +1564,23 @@ form.form2 {
         display: none;
     }
     
+}
+
+
+/* Quienes Somos */
+.test1{
+    background-image: url(https://i.pinimg.com/originals/1d/21/0b/1d210b773a7cf78995417f96f2aa308f.jpg);
+    background-size:contain;
+    display: flex;
+}
+
+.we{
+    background-image: url(https://i.pinimg.com/originals/a8/75/49/a87549dfc0927df78458d6d2bc17543b.gif);
+    background-size:contain;
+    display: flex;
+   
+}
+
+.video{
+    margin-bottom: 50px;
 }
