@@ -94,338 +94,563 @@
             </nav>
         </div>
     </header>
-
-    <div class="contenedor-grid contenedor">
-        <div class="centro">
-            <h2>Harry Potter y La Piedra Filosofal</h2>
-            <div class="producto">
+    <div class="contenedor centro">
+        <div class="container-title"><h3>Libros</h3></div>    
+        <main class="mainproductos">
+            <div id="carousellibro1" class="carousel slide">
+                <div class="carouselinner">
+                    <div class="carousel-item active">
+                        <img src="img\libros\1\1.jpeg"   alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\1\1a.jpg"  alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\1\1b.jfif" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\1\1c.jfif"  alt="...">
+                    </div>
+                  
+                </div>
                 
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 280px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample1" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 280px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img/libros/1/1.jpeg" class="object-fit-contain border rounded" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousellibro1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousellibro1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$16800</span>
+                        <h3>HP y La piedra Filosofal</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="libro">Idioma</label>
+                            <select name="libro" id="libro">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Español</option>
+                                <option value="adults">Inglés</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean" >Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                type="number" 
+                                placeholder="1" 
+                                value="1" 
+                                min="1"
+                                class="input-quantity"
+                                >
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
                                 </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\1\1a.jpg" class="object-fit-contain border rounded" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\1\1b.jfif" style="max-width: 540px; max-height: 280px;"class="object-fit-contain border rounded" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\1\1c.jfif" class="object-fit-contain border rounded" alt="...">
-                                </div>
-                                
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
                             </div>
-                        
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
                         </div>
-                      <div class="col-md-8"style="max-width: 540px; max-height: 180px;">
-                        <div class="card-body">
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>¡Embárcate en la aventura mágica con nuestra colección de Libros de Harry Potter, disponibles en dos ediciones emocionantes: Inglés y Español! Sumérgete en el mundo encantado de Hogwarts, siguiendo los pasos de Harry, Hermione y Ron en su lucha contra las fuerzas oscuras. Cada página te transportará a un universo lleno de hechizos, misterios y amistad. Haz tu pedido ahora y haz que la magia de J.K. Rowling cobre vida en tus manos!</p>
+                            </div>
                         </div>
-                      </div>
+        
+        
                     </div>
                 </div>
                 
-            </div>
-            <h2>Harry Potter y La Cámara Secreta</h2>
-            <div class="producto">
+        </main>
+        <main class="mainproductos">
+            <div id="carousellibro2" class="carousel slide">
+                <div class="carouselinner">
+                    <div class="carousel-item active">
+                        <img src="img\libros\2\2.jfif" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\2\2a.jfif" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\2\2b.jfif" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\2\2c.jfif" alt="...">
+                    </div>
+                   
+                </div>
                 
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 280px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample2" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 280px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\2\2.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\2\2a.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\2\2b.jfif" style="max-width: 540px; max-height: 280px;"class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\2\2c.jfif" class="d-block w-100" alt="...">
-                                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousellibro2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousellibro2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$16800</span>
+                        <h3>HP y La Cámara Secreta</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="libro">Idioma</label>
+                            <select name="libro" id="libro">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Español</option>
+                                <option value="adults">Inglés</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                type="number" 
+                                value="1" 
+                                placeholder="1"  
+                                min="1"
+                                class="input-quantity"
+                                >
                                 
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
                             </div>
-                        
+                           
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
                         </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>¡Embárcate en la aventura mágica con nuestra colección de Libros de Harry Potter, disponibles en dos ediciones emocionantes: Inglés y Español! Sumérgete en el mundo encantado de Hogwarts, siguiendo los pasos de Harry, Hermione y Ron en su lucha contra las fuerzas oscuras. Cada página te transportará a un universo lleno de hechizos, misterios y amistad. Haz tu pedido ahora y haz que la magia de J.K. Rowling cobre vida en tus manos!</p>
+                            </div>
                         </div>
-                      </div>
+        
+        
                     </div>
                 </div>
                 
-            </div>
-            <h2>Harry Potter y El Prisionero de Azkaban</h2>
-            <div class="producto">
+        </main>
+        <main class="mainproductos">
+            <div id="carousellibro3" class="carousel slide">
+                <div class="carouselinner">
+                    <div class="carousel-item active">
+                        <img src="img\libros\3\3.jfif"   alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\3\3a.jfif" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\3\3b.jfif" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\3\3c.jfif" alt="...">
+                    </div>
+                    
+                </div>
                 
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 280px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample3" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 280px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\3\3.jfif" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousellibro3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousellibro3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$16800</span>
+                        <h3>HP y El Prisionero de Azkabán</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="libro">Idioma</label>
+                            <select name="libro" id="libro">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Español</option>
+                                <option value="adults">Inglés</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                value="1" 
+                                type="number" 
+                                placeholder="1"  
+                                min="1"
+                                class="input-quantity"
+                                >
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement" ></i>
                                 </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\3\3a.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\3\3b.jfif" style="max-width: 540px; max-height: 280px;"class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\3\3c.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
                             </div>
-                        
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
                         </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>¡Embárcate en la aventura mágica con nuestra colección de Libros de Harry Potter, disponibles en dos ediciones emocionantes: Inglés y Español! Sumérgete en el mundo encantado de Hogwarts, siguiendo los pasos de Harry, Hermione y Ron en su lucha contra las fuerzas oscuras. Cada página te transportará a un universo lleno de hechizos, misterios y amistad. Haz tu pedido ahora y haz que la magia de J.K. Rowling cobre vida en tus manos!</p>
+                            </div>
                         </div>
-                      </div>
+        
+        
                     </div>
                 </div>
                 
-            </div>
-            <h2>Harry Potter y El Cáliz de Fuego</h2>
-            <div class="producto">
+        </main>
+        <main class="mainproductos">
+            <div id="carousellibro4" class="carousel slide">
+                <div class="carouselinner">
+                    <div class="carousel-item active">
+                        <img src="img\libros\4\4.jfif"   alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\4\4a.jfif"  alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\4\4b.jfif" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\4\4c.jfif"  alt="...">
+                    </div>
+                    
+                </div>
                 
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 280px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample4" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 280px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\4\4.jfif" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousellibro4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousellibro4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$16800</span>
+                        <h3>HP y El Cáliz de Fuego</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="libro">Idioma</label>
+                            <select name="libro" id="libro">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Español</option>
+                                <option value="adults">Inglés</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                type="number" 
+                                placeholder="1"  
+                                value="1" 
+                                min="1"
+                                class="input-quantity"
+                                >
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
                                 </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\4\4a.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\4\4b.jfif" style="max-width: 540px; max-height: 280px;"class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\4\4c.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
                             </div>
-                        
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
                         </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Esta bufanda encantadora está inspirada en una las casas de Hogwarts y presenta los colores y el emblema distintivo de Slytherin. Fabricada con tejido de alta calidad, esta bufanda no solo te mantendrá abrigado durante los días fríos, sino que también te sumergirá en la atmósfera mágica de la famosa escuela de magia.
+                                </p>
+                            </div>
                         </div>
-                      </div>
+        
+        
                     </div>
                 </div>
                 
-            </div>
-            <h2>Harry Potter y La Orden del Fénix</h2>
-            <div class="producto">
+        </main>
+        <main class="mainproductos">
+            <div id="carousellibro5" class="carousel slide">
+                <div class="carouselinner">
+                    <div class="carousel-item active">
+                        <img src="img\libros\5\5.jfif"   alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\5\5a.jfif"  alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\5\5b.jfif" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\5\5c.jfif"  alt="...">
+                    </div>
+                    
+                </div>
                 
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 280px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample5" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 280px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\5\5.jfif" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousellibro5" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousellibro5" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$16800</span>
+                        <h3>HP y La Orden del Fénix</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="libro">Idioma</label>
+                            <select name="libro" id="libro">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Español</option>
+                                <option value="adults">Inglés</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                type="number" 
+                                placeholder="1"  
+                                value="1" 
+                                min="1"
+                                class="input-quantity"
+                                >
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
                                 </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\5\5a.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\5\5b.jfif" style="max-width: 540px; max-height: 280px;"class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\5\5c.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
                             </div>
-                        
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
                         </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Esta bufanda encantadora está inspirada en una las casas de Hogwarts y presenta los colores y el emblema distintivo de Slytherin. Fabricada con tejido de alta calidad, esta bufanda no solo te mantendrá abrigado durante los días fríos, sino que también te sumergirá en la atmósfera mágica de la famosa escuela de magia.
+                                </p>
+                            </div>
                         </div>
-                      </div>
+        
+        
                     </div>
                 </div>
                 
-            </div>
-            <h2>Harry Potter y El Príncipe Mestizo</h2>
-            <div class="producto">
+        </main>
+        <main class="mainproductos">
+            <div id="carousellibro6" class="carousel slide">
+                <div class="carouselinner">
+                    <div class="carousel-item active">
+                        <img src="img\libros\6\6.jfif"   alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\6\6a.jfif"  alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\6\6b.jfif" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\6\6c.jfif"  alt="...">
+                    </div>
+                    
+                </div>
                 
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 280px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample6" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 280px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\6\6.jfif" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousellibro6" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousellibro6" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$16800</span>
+                        <h3>HP y El Misterio del Príncipe</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="libro">Idioma</label>
+                            <select name="libro" id="libro">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Español</option>
+                                <option value="adults">Inglés</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                type="number" 
+                                placeholder="1"  
+                                value="1" 
+                                min="1"
+                                class="input-quantity"
+                                >
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
                                 </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\6\6a.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\6\6b.jfif" style="max-width: 540px; max-height: 280px;"class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\6\6c.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
                             </div>
-                        
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
                         </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Esta bufanda encantadora está inspirada en una las casas de Hogwarts y presenta los colores y el emblema distintivo de Slytherin. Fabricada con tejido de alta calidad, esta bufanda no solo te mantendrá abrigado durante los días fríos, sino que también te sumergirá en la atmósfera mágica de la famosa escuela de magia.
+                                </p>
+                            </div>
                         </div>
-                      </div>
+        
+        
                     </div>
                 </div>
                 
-            </div>
-            <h2>Harry Potter y Las Reliquias de la Muerte</h2>
-            <div class="producto">
+        </main>
+        <main class="mainproductos">
+            <div id="carousellibro7" class="carousel slide">
+                <div class="carouselinner">
+                    <div class="carousel-item active">
+                        <img src="img\libros\7\7.jfif"   alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\7\7a.jfif"  alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\7\7b.jfif" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img\libros\7\7c.jfif"  alt="...">
+                    </div>
+                    
+                </div>
                 
-                <div class="productbox" >
-                    <div class="row g-0"style="max-width: 540px; max-height: 280px;">
-                        <div class="col-md-4">
-                        
-                            <div id="carouselExample7" class="carousel slide">
-                                <div class="carousel-inner"style="max-width: 540px; max-height: 280px;" >
-                                <div class="carousel-item active" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\7\7.jfif" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousellibro7" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousellibro7" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+                <div class="container-info-producto">
+                    <div class="container-precio">
+                        <span>$16800</span>
+                        <h3>HP y Las Reliquias de la Muerte</h3>
+                    </div>
+                    <div class="container-detalles-productos">
+                        <div class="form-group">
+                            <label for="libro">Idioma</label>
+                            <select name="libro" id="libro">
+                                <option disabled selected value="">Elija una opción</option>
+                                <option value="kids">Español</option>
+                                <option value="adults">Inglés</option>
+                            </select>
+                        </div>
+                        <button class="btn-clean">Limpiar</button>
+                        <div class="carrito">
+                            <div class="container-quantity">
+                                <input 
+                                type="number" 
+                                placeholder="1"  
+                                value="1" 
+                                min="1"
+                                class="input-quantity"
+                                >
+                                <div class="btn-increment-decrement">
+                                    <i class="fa-solid fa-chevron-up" id="increment"></i>
+                                    <i class="fa-solid fa-chevron-down" id="decrement"></i>
                                 </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\7\7a.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\7\7b.jfif" style="max-width: 540px; max-height: 280px;"class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" style="max-width: 540px; max-height: 280px;">
-                                    <img src="img\libros\7\7c.jfif" class="d-block w-100" alt="...">
-                                </div>
-                                
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample7" data-bs-slide="prev" style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample7" data-bs-slide="next"style="max-width: 540px; max-height: 180px;">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                                
                             </div>
-                        
+                            <button class="btn-carrito">
+                                <i class="fa-solid fa-plus"></i>
+                                Añadir al carrito
+                            </button>
                         </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Harry Potter y Las Reliquias de la muerte </h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          
+                        <div class="container-descripcion">
+                            <div class="titulo-descripcion">
+                                <h4>Descripción</h4>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="texto-descripcion">
+                                <p>Esta bufanda encantadora está inspirada en una las casas de Hogwarts y presenta los colores y el emblema distintivo de Slytherin. Fabricada con tejido de alta calidad, esta bufanda no solo te mantendrá abrigado durante los días fríos, sino que también te sumergirá en la atmósfera mágica de la famosa escuela de magia.
+                                </p>
+                            </div>
                         </div>
-                      </div>
+        
+        
                     </div>
                 </div>
                 
-            </div>
-            <div>
-                <button><a href="productos.html">Volver atrás</a></button>
-                <button><a href="./">Volver al Inicio</a></button>
-                
-            </div>
-            
-        </div>
+        </main> 
+        <div class="contenedor-grid">
+            <div class="centro">
+                <button type="button"><a href="productos.html" >Volver atrás</a></button>
+                <button type="button"><a href="./">Volver al Inicio </a></button>
+            </div> 
+        </div>     
+        
     </div>
+
+    
 
     <footer>
         <div class="experiencia">
@@ -466,7 +691,9 @@
             Todos los derechos Reservados PotterStore 2023.
         </p>
     </footer>
-
+    <!-- Script de js productos-->
+    <script src="index.js">
+    </script>
     <!-- Script de Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
