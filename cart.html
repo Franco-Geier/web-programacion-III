@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="icon" href="hpicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;700;900&family=Niconne&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de Navegacion -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-0 justify-content-between">
+            <div class="container py-3 px-0">
+
+                <!-- Menú de hamburguesa -->
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Logo principal -->
+                <a href="./" class="navbar-brand h1 mb-0 p-0 order-1 order-lg-1">
+                    <img class="d-inline-block" src="img/harry-potter-seeklogo.svg" alt="Logo">
+                    PotterStore
+                </a>
+        
+                <!-- Links colapsados -->
+                <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item dropdown">
+                            <a href="productos.html" class="nav-link dropdown-toggle p-0 me-4 active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a href="bufandas.html" class="dropdown-item">
+                                        Bufandas
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="libros.html" class="dropdown-item">
+                                        Libros
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="tazas.html" class="dropdown-item">
+                                        Tazas
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="varitas.html" class="dropdown-item">
+                                        Varitas
+                                    </a>
+                                </li>
+
+                            </ul>
+                            
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="quienessomos.html" class="nav-link p-0 me-4">
+                                Nosotros
+                            </a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link p-0">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="contenedor-botones-index d-lg-none">
+                        <a class="boton transparente" href="login.html">Login</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <!-- Formulario de busqueda -->
+                    <form class="form1 d-flex ms-auto position-relative">
+                        <input type="text" class="form-control form-index" placeholder="Buscar">
+                        <div class="position-absolute icono-form">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </form>
+
+                </div>
+
+                <!-- Botones e iconos en pantallas grandes -->
+                <div class="contenedor-botones-index order-2 order-lg-3">
+                    <a class="boton transparente d-none d-md-block" href="login.html">Login</a>
+                    <a class="boton boton-azul" href="registro.html">Sign Up</a>
+                    <i class="fa-solid fa-cart-shopping d-none d-sm-block" aria-hidden="true"></i>
+                    <i class="fa-regular fa-heart d-none d-md-block" aria-hidden="true"></i>
+                </div>
+                
+            </div> <!--.container-->
+        </nav>
+    </header>
+
+
+    <footer>
+        <div class="experiencia">
+            <div>
+                <h3>Legal</h3>
+                <nav class="navegacion-legal">
+                    <ul>
+                        <li><a href="https://www.wizardingworld.com/childrens-privacy-policy" target="_blank">Aviso de Privacidad</a></li>
+                        <li><a href="https://www.wizardingworld.com/privacy" target="_blank">Aviso de cookies</a></li>
+                        <li><a href="https://www.wizardingworld.com/legals" target="_blank">Aviso Legal</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div>
+                <h3>Ayuda</h3>
+                <nav class="navegacion-ayuda">
+                    <ul>
+                        <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li><a href="contacto.html">Contactanos</a></li>
+                        <li><a href="https://www.wizardingworld.com/terms" target="_blank">Bases y Condiciones</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="contenedor-redes">
+                <h3>Redes <span>sociales</span></h3>
+                <nav class="redes-sociales centrar-texto">                    
+                    <a href="#"><i class="fa-brands fa-facebook-f icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube icon" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram icon" aria-hidden="true"></i></a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">
+            Todos los derechos Reservados PotterStore 2023.
+        </p>
+    </footer>
+</body>
+</html>

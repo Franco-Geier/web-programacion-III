@@ -24,3 +24,17 @@ btnDecrements.forEach((btnDecrement, index) => {
     });
 });
 
+const productosLink = document.querySelector('.nav-link[href="productos.html"]');
+
+const isMobileScreen = () => {
+    const screenWidth = window.innerWidth || document.documentElement.clientWidth;
+    return screenWidth <= 991;
+};
+
+productosLink.addEventListener('click', function(event) {
+    if (isMobileScreen()) {
+        return;
+    }
+    event.preventDefault();
+    window.location.href = this.getAttribute('href');
+});
