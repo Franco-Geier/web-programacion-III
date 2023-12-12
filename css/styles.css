@@ -200,7 +200,7 @@ p span {
     }
 }
 .boton-azul {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     border: 1px solid var(--color-secondary);
 }
 
@@ -225,15 +225,26 @@ p span {
 }
 
 .boton-azul:hover {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
 }
 
 
 /* Header */
 .navbar-brand {
+    margin: 0 0 0 3rem;
     font-size: 2.4rem;
     font-weight: bold;
     transition: all .2s ease-in-out;
+}
+@media (max-width: 768px) {
+    .navbar-brand {
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width: 991px) {
+    .navbar-brand {
+        margin: 0 3rem 0 0;
+    }
 }
 .navbar-brand:hover{
     transform: scale(1.07);
@@ -248,9 +259,9 @@ p span {
 
 .nav-item .nav-link {
     color: #ffffff;
-    font-size: 1.7rem;
-    transition: all .2s ease-in-out;
+    font-size: 1.4rem;
     margin-bottom: .5rem;
+    font-weight: 700;
 }
 
 .nav-item .nav-link:hover {
@@ -259,7 +270,6 @@ p span {
 @media only screen and (min-width: 991px) {
     .nav-item .nav-link:hover {
         text-decoration: underline;
-        transform: scale(1.07);
     }
     .nav-item .nav-link {
         margin-bottom: 0;
@@ -271,10 +281,12 @@ p span {
     font-size: 1.3rem;
 }
 
-form input.form-control.m-0 {
+form input.form-control.form-index {
     padding: .5rem .5rem .5rem 2rem;
     font-weight: 900;
     font-size: 1.5rem;
+    max-width: 13rem;
+    margin: 0 2rem 0 0;
 }
 
 .icono-form {
@@ -282,6 +294,26 @@ form input.form-control.m-0 {
     transform: translateY(-50%);
     left: .6rem;
     font-size: 1.3rem;
+}
+
+.contenedor-botones-index {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.contenedor-botones-index .boton {
+    margin-bottom: 0;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    font-weight: 800;
+    flex: 0 0 auto;
+}
+
+.contenedor-botones-index i {
+    color: #ffffff;
+    font-size: 2rem;
 }
 
 .carousel-inner {
@@ -1312,6 +1344,43 @@ form.form2 {
 .remember-forgot label {
     display: flex;
     align-items: baseline;
+}
+
+.form-inferior h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2.3rem;
+}
+
+.form-inferior .boton {
+    width: 100%;
+    padding: .7rem;
+    text-transform: capitalize;
+    border-radius: 3rem;
+    margin-bottom: 1.4rem;
+}
+
+
+/* Registro */
+.contenedor-nombres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form2 p {
+    color: #ffffff;
+    margin: -2.6rem 0 1.9rem;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.form2 p a {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* Estilos pagina productos */
