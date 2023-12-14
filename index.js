@@ -24,6 +24,7 @@ btnDecrements.forEach((btnDecrement, index) => {
     });
 });
 
+
 // Funcion para el dropdown
 const productosLink = document.querySelector('.nav-link[href="productos.html"]');
 

@@ -42,9 +42,8 @@ const FooterComponent = {
     `
 };
 
-
   
-const app = Vue.createApp({});
+const footerApp = Vue.createApp({});
 
-app.component('footer-component', FooterComponent);
-app.mount('#app');
+footerApp.component('footer-component', FooterComponent);
+footerApp.mount('#app');
