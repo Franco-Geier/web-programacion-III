@@ -39,3 +39,40 @@ productosLink.addEventListener('click', function(event) {
     event.preventDefault();
     window.location.href = this.getAttribute('href');
 });
+
+
+// Función del navbar
+(function() {
+    const nav = document.querySelector('.navbar');
+    if(window.innerWidth >= 992) {
+        if(window.scrollY <= 0) {
+            nav.classList.add('bg-transparent');
+        } else {
+            nav.classList.remove('bg-transparent');
+        }
+    }
+})();
+
+
+window.onscroll = function() {
+    const nav = document.querySelector('.navbar');
+    if(window.innerWidth >= 992) {
+        if(window.scrollY <= 0) {
+            nav.classList.add('bg-transparent');
+        } else {
+            nav.classList.remove('bg-transparent');
+        }
+    }
+};
+
+
+window.onresize = function() {
+    const nav = document.querySelector('.navbar');
+    if(window.innerWidth < 992) {
+        nav.classList.remove('bg-transparent');
+    } else if(window.scrollY <= 0) {
+        nav.classList.add('bg-transparent');
+    }
+};
+
+  
