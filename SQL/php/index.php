@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PotterStore</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
@@ -15,13 +15,13 @@
             return respuesta
         }
     </script>
-    <h1 class="text-center p-3">Harry Potter Store - Login</h1>
+    <h1 class="text-center p-3 text-success">Harry Potter Store - Login</h1>
     <?php
     include "conexion.php";
     ?>
     <div class="container-fluid row">
         <form class="col-4 p-3" method="POST">
-            <h3 class="text-center text-secondary">Registro</h3>
+            <h3 class="text-center text-success alert alert-secondary">Registro</h3>
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nombre</label>
@@ -36,7 +36,7 @@
                 <input type="text" class="form-control" name="DNI">
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Fecha de nacimmiento</label>
+                <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
                 <input type="date" class="form-control" name="fecha">
             </div>
             <div class="mb-3">
@@ -44,7 +44,7 @@
                 <input type="text" class="form-control" name="correo">
             </div>
 
-            <button type="submit" class="btn btn-primary mb-2" name="btnregistrar" value="ok">Registrar</button>
+            <button type="submit" class="btn btn-primary mb-2" name="btnregistrar" value="ok">Modificar</button>
 
             <?php
 
@@ -90,7 +90,7 @@
                             <td><?= $datos->fecha_nac ?></td>
                             <td><?= $datos->correo ?></td>
                             <td>
-                                <a href="">Editar</a>
+                                <a href="modificar_producto.php?id=<?= $datos->id_persona ?>">Editar</a>
                                 <a onclick="return eliminar()" href="index.php?id=<?= $datos->id_persona ?>" ?>Eliminar</a>
                             </td>
                         </tr>
